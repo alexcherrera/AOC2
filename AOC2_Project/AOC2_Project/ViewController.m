@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "zombieBase.h"
 @interface ViewController ()
 
 @end
