@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  AOC2_Project
 //
-//  Created by Alexander Herrera on 1/7/13.
+//  Created by Alexander Herrera on 1/8/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
@@ -12,18 +12,11 @@
 
 @implementation AppDelegate
 
-- (void)dealloc
-{
-	[_window release];
-	[_viewController release];
-    [super dealloc];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+	self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
