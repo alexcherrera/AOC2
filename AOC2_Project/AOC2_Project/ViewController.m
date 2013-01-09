@@ -28,7 +28,7 @@
 		[internalDesktop setDesktopTypes: theDesktopTypes];
 		[internalDesktop printDesktopTypes];
 		NSArray * theDesktopFunctions = [[NSArray alloc] initWithObjects:@"Checking email, reading, and suring the web.", @"Watching videos, little music editing, and sometimes playing video games.", @"High amounts of gaming time, creating and editing videos and musics, also for programming.", nil];
-		[internalDesktop setDesktopComments: theDesktopFunctions];
+		[internalDesktop setDesktopFunction: theDesktopFunctions];
 		[[theDesktopFunctions objectAtIndex:0] desktopFunction];
 		[[theDesktopFunctions objectAtIndex:1] desktopFunction];
 		[[theDesktopFunctions objectAtIndex:2] desktopFunction];
