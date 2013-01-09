@@ -21,17 +21,17 @@
 - (void)viewDidLoad
 {
 	//Working with the base class:
-	DesktopBuildBase * researchDesktop = (DesktopBuildBase *)[DesktopBuildFactory makeNewDesktop:0];
-	if (researchDesktop !=nil)
+	DesktopBuildInternal * internalDesktop = (DesktopBuildInternal *)[DesktopBuildFactory makeNewDesktop:0];
+	if (internalDesktop !=nil)
 	{
 		NSArray * theDesktopTypes = [[NSArray alloc] initWithObjects:@"Low-End Desktops", @"Middle-End Desktops", @"High-End Desktop", nil];
-		[researchDesktop setDesktopTypes: theDesktopTypes];
-		[researchDesktop printDesktopTypes];
-		NSArray * theDesktopComments = [[NSArray alloc] initWithObjects:@"Checking email, reading, and suring the web.", @"Watching videos, little music editing, and sometimes playing video games.", @"High amounts of gaming time, creating and editing videos and musics, also for programming.", nil];
-		[researchDesktop setDesktopComments: theDesktopComments];
-		[[theDesktopComments objectAtIndex:0] desktopTypesComments];
-		[[theDesktopComments objectAtIndex:1] desktopTypesComments];
-		[[theDesktopComments objectAtIndex:2] desktopTypesComments];
+		[internalDesktop setDesktopTypes: theDesktopTypes];
+		[internalDesktop printDesktopTypes];
+		NSArray * theDesktopFunctions = [[NSArray alloc] initWithObjects:@"Checking email, reading, and suring the web.", @"Watching videos, little music editing, and sometimes playing video games.", @"High amounts of gaming time, creating and editing videos and musics, also for programming.", nil];
+		[internalDesktop setDesktopComments: theDesktopFunctions];
+		[[theDesktopFunctions objectAtIndex:0] desktopFunction];
+		[[theDesktopFunctions objectAtIndex:1] desktopFunction];
+		[[theDesktopFunctions objectAtIndex:2] desktopFunction];
 		
 		//NSLog(@"They are %@", theDesktopTypes);
 	}
