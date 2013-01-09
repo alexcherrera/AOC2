@@ -10,25 +10,24 @@
 
 @implementation DesktopBuildInternal
 
-@synthesize towerBrands, motherBoardBrands, centralProcessingUnitBrands, powerSupplyUnitBrands, opticalDriveBrands, hardDriveBrands, randomAccessMemoryBrands, towerName1, towerName2, motherBoardName, centralProcessingUnitName, powerSupplyUnitName, opticalDriveName, randomAccessMemoryName;
+@synthesize towerCaseParts, towerName1, towerName2, motherBoardName, centralProcessingUnitName, powerSupplyUnitName, opticalDriveName, randomAccessMemoryName;
 
 -(id)init
 {
 	self = [super init];
 	if (self != nil)
 	{
-		towerBrands = [[NSArray alloc] initWithObjects:@"Corsair", @"CM Storm", nil];
-		//NSLog(@"Brands are %@", [towerBrands objectAtIndex:0]);
-		/*[self towerBrands];
-		[self setDesktopComments: nil];
-		[self setLowEndDesktopAvgPrice: 0];
-		[self setCustomDesktopTotalPrice: 0];*/
+		
+		[self setLowEndDesktopAvgPrice: 100];
+		[self setMiddleEndDesktopAvgPrice: 500];
+		[self setHighEndDesktopAvgPrice: 800];
 	}
 	return self;
 }
--(void)printTowers
+
+-(void)towerCaseParts
 {
-	NSLog(@"Brands are %@", [towerBrands objectAtIndex:0]);
+
 }
 /*-(NSArray *) towerBrands
 {

@@ -10,7 +10,7 @@
 
 @implementation DesktopBuildBase
 //Makes the getters and setters:
-@synthesize desktopTypes, desktopFunction, desktopComments, lowEndDesktopAvgPrice, middleEndDesktopAvgPrice, highEndDesktopAvgPrice, customDesktopTotalPrice;
+@synthesize desktopTypes, desktopFunctionLow, desktopFunctionMiddle, desktopFunctionHigh, lowEndDesktopAvgPrice, middleEndDesktopAvgPrice, highEndDesktopAvgPrice, customDesktopTotalPrice;
 
 -(id)init
 {
@@ -18,12 +18,13 @@
 	if (self != nil)
 	{
 		[self setDesktopTypes: nil];
-		[self setDesktopFunction: nil];
-		[self setDesktopComments: nil];
+		[self setDesktopFunctionLow: nil];
+		[self setDesktopFunctionMiddle: nil];
+		[self setDesktopFunctionHigh: nil];
 		[self setLowEndDesktopAvgPrice: 0];
 		[self setMiddleEndDesktopAvgPrice: 0];
 		[self setHighEndDesktopAvgPrice: 0];
-		[self setCustomDesktopTotalPrice: 20];
+		[self setCustomDesktopTotalPrice: 0];
 	}
 	return self;
 }
@@ -31,18 +32,36 @@
 {
 	NSLog(@"There are three types of Desktops: %@, %@, %@.", [desktopTypes objectAtIndex:0], [desktopTypes objectAtIndex:1], [desktopTypes objectAtIndex:2]);
 }
--(void)desktopTypesFunctions
+-(void)printDesktopFunction
 {
-		if([desktopTypes objectAtIndex:0] == @"Low-End Desktops")
-		{
-			NSLog(@"%@ are for %@", [desktopTypes objectAtIndex:0], [desktopFunction objectAtIndex:0]);
-		} else if ([desktopTypes objectAtIndex:1] == @"Middle-End Desktops")
-		  {
-			NSLog(@"%@ are for %@", [desktopTypes objectAtIndex:1], [desktopFunction objectAtIndex:1]);
-		  } else if ([desktopTypes objectAtIndex:2] == @"High-End Desktops")
-		  {
-			NSLog(@"%@ are for %@", [desktopTypes objectAtIndex:2], [desktopFunction objectAtIndex:2]);
-		  }
+	if(desktopFunctionLow == @"Checking email, reading, and suring the web.")
+	{
+		NSLog(@"Checking email, reading, and suring the web.");
+	}
+	if (desktopFunctionMiddle == @"Watching videos, little music editing, and sometimes playing video games.")
+	{
+		NSLog(@"Watching videos, little music editing, and sometimes playing video games.");
+	}
+	if (desktopFunctionHigh == @"High amounts of gaming time, creating and editing videos and musics, also for programming.")
+	{
+		NSLog(@"High amounts of gaming time, creating and editing videos and musics, also for programming.");
+	}
+}
+-(void)printAvgPrice
+{
+	if (lowEndDesktopAvgPrice > 0 && lowEndDesktopAvgPrice < 400)
+	{
+		NSLog(@"This is a Low-End Desktop with a price of %i.", lowEndDesktopAvgPrice);
+	}
+	if (middleEndDesktopAvgPrice >= 400 && middleEndDesktopAvgPrice < 700)
+	{
+		NSLog(@"This is a Middle-End Desktop with a price of %i.", middleEndDesktopAvgPrice);
+	}
+	if (highEndDesktopAvgPrice >= 700)
+	{
+		NSLog(@"This is a High-End Desktop with a price of %i.", highEndDesktopAvgPrice);
+	}
+
 }
 -(void)calculateTotalPrice
 {
