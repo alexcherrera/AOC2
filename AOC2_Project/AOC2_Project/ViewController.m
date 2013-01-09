@@ -20,11 +20,27 @@
 
 - (void)viewDidLoad
 {
-	DesktopBuildFactory * desktopBuildFactory = [[DesktopBuildFactory alloc] init];
-	if (desktopBuildFactory != nil)
+	//Working with the base class:
+	DesktopBuildBase * researchDesktop = (DesktopBuildBase *)[DesktopBuildFactory makeNewDesktop:0];
+	if (researchDesktop !=nil)
 	{
-		//DesktopBuildBase * towerCase = [desktopBuildFactory makeNewDesktop: 0];
+		NSArray * theDesktopTypes = [[NSArray alloc] initWithObjects:@"Low-End Desktops", @"Middle-End Desktops", @"High-End Desktop", nil];
+		[researchDesktop setDesktopTypes: theDesktopTypes];
+		[researchDesktop printDesktopTypes];
+		NSArray * theDesktopComments = [[NSArray alloc] initWithObjects:@"Checking email, reading, and suring the web.", @"Watching videos, little music editing, and sometimes playing video games.", @"High amounts of gaming time, creating and editing videos and musics, also for programming.", nil];
+		[researchDesktop setDesktopComments: theDesktopComments];
+		[[theDesktopComments objectAtIndex:0] desktopTypesComments];
+		[[theDesktopComments objectAtIndex:1] desktopTypesComments];
+		[[theDesktopComments objectAtIndex:2] desktopTypesComments];
+		
+		//NSLog(@"They are %@", theDesktopTypes);
 	}
+
+
+	/*DesktopBuildBase * internal = (DesktopBuildBase *)[DesktopBuildFactory makeNewDesktop:INTERNAL];
+	[internal calculateTotalPrice];
+	DesktopBuildInternal *printTw = (DesktopBuildInternal *)[DesktopBuildFactory makeNewDesktop:TOWERCASE];
+	[printTw printTowers];*/
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

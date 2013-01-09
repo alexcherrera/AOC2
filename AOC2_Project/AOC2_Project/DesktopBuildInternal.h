@@ -40,6 +40,6 @@ typedef enum {
 @property NSString * opticalDriveName;
 @property NSString * randomAccessMemoryName;
 
--(NSArray *) towerBrands;
+-(void) printTowers;
 
 @end

@@ -18,7 +18,7 @@
 	if (self != nil)
 	{
 		towerBrands = [[NSArray alloc] initWithObjects:@"Corsair", @"CM Storm", nil];
-		NSLog(@"Brands are %@", [towerBrands objectAtIndex:0]);
+		//NSLog(@"Brands are %@", [towerBrands objectAtIndex:0]);
 		/*[self towerBrands];
 		[self setDesktopComments: nil];
 		[self setLowEndDesktopAvgPrice: 0];
@@ -26,7 +26,10 @@
 	}
 	return self;
 }
-
+-(void)printTowers
+{
+	NSLog(@"Brands are %@", [towerBrands objectAtIndex:0]);
+}
 /*-(NSArray *) towerBrands
 {
 	if (towerBrands != nil)

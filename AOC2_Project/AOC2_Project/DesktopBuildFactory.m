@@ -12,7 +12,17 @@
 
 +(DesktopBuildBase *)makeNewDesktop:(int)buildDesktop
 {
-	return [[DesktopBuildInternal alloc] init];
+	if (buildDesktop == INTERNAL)
+	{
+		return [[DesktopBuildInternal alloc] init];
+	} else if (buildDesktop == ACCESSORIES)
+	  {
+		return[[DesktopBuildAccessories alloc] init];
+	  } else if (buildDesktop ==SOFTWARE)
+	    {
+			return [[DesktopBuildAccessories alloc] init];
+		}
+	else return nil;
 }
 
 @end

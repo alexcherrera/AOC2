@@ -20,15 +20,17 @@ typedef enum {
 }
 
 @property NSArray * desktopTypes;//Low, Middle, High as strings
-@property NSString * desktopComments;//Personal comments toward machine
+@property NSArray * desktopComments;//Personal comments toward machine
 //Average price ranges:
-@property int * lowEndDesktopAvgPrice;
-@property int * middleEndDesktopAvgPrice;
-@property int * highEndDesktopAvgPrice;
-@property int * customDesktopTotalPrice;
+@property int lowEndDesktopAvgPrice;
+@property int middleEndDesktopAvgPrice;
+@property int highEndDesktopAvgPrice;
+@property int customDesktopTotalPrice;
 
 -(id)init;
 
+-(void)printDesktopTypes;
+-(void)desktopTypesComments;
 -(void)calculateTotalPrice;
 
 @end
