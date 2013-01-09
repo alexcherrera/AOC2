@@ -10,6 +10,8 @@
 
 @implementation DesktopBuildSoftware
 
+@synthesize macCompany, windowsCompany;
+
 -(id)init
 {
 	self = [super init];

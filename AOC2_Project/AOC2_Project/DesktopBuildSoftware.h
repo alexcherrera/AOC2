@@ -28,4 +28,9 @@ typedef enum {
 	int securityEnum;
 	int operatingSystemEnum;
 }
+
+//Strings of the Company name of the OS:
+@property NSString * macCompany;
+@property NSString * windowsCompany;
+
 @end

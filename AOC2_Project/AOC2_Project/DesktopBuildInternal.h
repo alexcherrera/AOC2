@@ -31,9 +31,15 @@ typedef enum {
 @property NSArray * opticalDriveBrands;
 @property NSArray * hardDriveBrands;
 @property NSArray * randomAccessMemoryBrands;
-
 //Other names used to represent pieces:
-@property NSString * towername1;
-@property NSString * towername2;
-@property NSString * motherBoardname;
+@property NSString * towerName1;
+@property NSString * towerName2;
+@property NSString * motherBoardName;
+@property NSString * centralProcessingUnitName;
+@property NSString * powerSupplyUnitName;
+@property NSString * opticalDriveName;
+@property NSString * randomAccessMemoryName;
+
+-(NSArray *) towerBrands;
+
 @end

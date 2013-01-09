@@ -10,6 +10,8 @@
 
 @implementation DesktopBuildAccessories
 
+@synthesize monitorBrands, speakerBrands, cablesBrands, keyboardBrands, mouseBrands, monitorPrice, speakerPrice, cablesPrice, keyboardPrice, mousePrice;
+
 -(id)init
 {
 	self = [super init];
