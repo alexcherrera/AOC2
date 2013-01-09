@@ -10,7 +10,8 @@
 #import "DesktopBuildFactory.h"
 #import "DesktopBuildBase.h"
 #import "DesktopBuildInternal.h"
-#import "DesktopBuildAccessories.h
+#import "DesktopBuildAccessories.h"
+#import "DesktopBuildSoftware.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +20,11 @@
 
 - (void)viewDidLoad
 {
+	DesktopBuildFactory * desktopBuildFactory = [[DesktopBuildFactory alloc] init];
+	if (desktopBuildFactory != nil)
+	{
+		//DesktopBuildBase * towerCase = [desktopBuildFactory makeNewDesktop: 0];
+	}
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

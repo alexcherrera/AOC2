@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DesktopBuildBase.h"
+#import "DesktopBuildInternal.h"
+#import "DesktopBuildAccessories.h"
+#import "DesktopBuildSoftware.h"
 
 @interface DesktopBuildFactory : NSObject
+
++(DesktopBuildBase *)makeNewDesktop:(int)buildDesktop;
+
 
 @end

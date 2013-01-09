@@ -7,7 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DesktopBuildBase.h"
 
-@interface DesktopBuildSoftware : NSObject
+//Security Software Enum
+typedef enum {
+	NORTON = 0,
+	BARRACUDA,
+	MCAFEE,
+	KASPERSKY
+}securityEnum;
+//Operating Software Enum
+typedef enum {
+	MAC	= 0,
+	WINDOWS,
+	LINUX
+}operatingSystemEnum;
 
+@interface DesktopBuildSoftware : DesktopBuildBase
+{
+	int securityEnum;
+	int operatingSystemEnum;
+}
 @end

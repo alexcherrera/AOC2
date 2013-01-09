@@ -10,4 +10,14 @@
 
 @implementation DesktopBuildSoftware
 
+-(id)init
+{
+	self = [super init];
+	if (self != nil)
+	{
+	
+	}
+	return self;
+}
+
 @end

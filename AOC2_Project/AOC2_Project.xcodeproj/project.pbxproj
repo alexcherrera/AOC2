@@ -102,8 +102,6 @@
 				88FF1450169CE0CB00202751 /* AppDelegate.m */,
 				88FF1458169CE0CB00202751 /* ViewController.h */,
 				88FF1459169CE0CB00202751 /* ViewController.m */,
-				88FF14E5169D11E000202751 /* DesktopBuildSoftware.h */,
-				88FF14E6169D11E000202751 /* DesktopBuildSoftware.m */,
 				88FF145B169CE0CC00202751 /* ViewController.xib */,
 				88FF1447169CE0CB00202751 /* Supporting Files */,
 				88FF14D8169D10FD00202751 /* DesktopBuildFactory.h */,
@@ -114,6 +112,8 @@
 				88FF14E0169D114100202751 /* DesktopBuildInternal.m */,
 				88FF14E2169D118300202751 /* DesktopBuildAccessories.h */,
 				88FF14E3169D118300202751 /* DesktopBuildAccessories.m */,
+				88FF14E5169D11E000202751 /* DesktopBuildSoftware.h */,
+				88FF14E6169D11E000202751 /* DesktopBuildSoftware.m */,
 			);
 			path = AOC2_Project;
 			sourceTree = "<group>";

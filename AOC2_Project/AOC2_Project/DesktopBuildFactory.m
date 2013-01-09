@@ -10,4 +10,9 @@
 
 @implementation DesktopBuildFactory
 
++(DesktopBuildBase *)makeNewDesktop:(int)buildDesktop
+{
+	return [[DesktopBuildInternal alloc] init];
+}
+
 @end
