@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-	//Working with the base class:
+	//Working with the internal subclass:
 	DesktopBuildInternal * internalDesktop = (DesktopBuildInternal *)[DesktopBuildFactory makeNewDesktop:INTERNAL];
 	if (internalDesktop !=nil)
 	{	//Desktop Type:
@@ -40,11 +40,22 @@
 		//Low-End Desktop Average Price:
 		[internalDesktop printAvgPrice];
 		//Tower/Case internal parts:
-		NSArray * theTowerCaseParts = [[NSArray alloc] initWithObjects:@"MotherBoard", @"Central Processing Unit", @"Power Supply Unit", @"Optical Drive", @"Hard Drive", @"Random Access Memory", @"Graphic's Card", @"Fan/Cooling System", @"Cables", nil];
+		NSArray * theTowerCaseParts = [[NSArray alloc] initWithObjects:@"MotherBoard", @"Central Processing Unit", @"Power Supply Unit", @"Optical Drive", @"Hard Drive", @"Solid State Drive", @"Random Access Memory", @"Graphic's Card", @"Fan/Cooling System", @"Cables", nil];
 		[internalDesktop setTowerCaseParts:theTowerCaseParts];
-		
+		[internalDesktop towerCasePartandShortNames];
 	}
-
+	//Working with the Accessories subclass:
+	DesktopBuildAccessories * accessories = (DesktopBuildAccessories *)[DesktopBuildFactory makeNewDesktop:ACCESSORIES];
+	if (accessories != nil)
+	{
+		//External Accessories:
+		NSArray * theExternalAccessories = [[NSArray alloc] initWithObjects:@"Monitor", @"Speakers", @"Keyboard", @"Mouse", @"Cables",  nil];
+		[accessories setExternalAccessories: theExternalAccessories];
+		[accessories arrayPrintAccessories];
+		[accessories intPrintAccessories];
+	}
+	
+	
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

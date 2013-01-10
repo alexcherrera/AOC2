@@ -51,15 +51,15 @@
 {
 	if (lowEndDesktopAvgPrice > 0 && lowEndDesktopAvgPrice < 400)
 	{
-		NSLog(@"This is a Low-End Desktop with a price of %i.", lowEndDesktopAvgPrice);
+		NSLog(@"This is a Low-End Desktop with a price of $%i.", lowEndDesktopAvgPrice);
 	}
 	if (middleEndDesktopAvgPrice >= 400 && middleEndDesktopAvgPrice < 700)
 	{
-		NSLog(@"This is a Middle-End Desktop with a price of %i.", middleEndDesktopAvgPrice);
+		NSLog(@"This is a Middle-End Desktop with a price of $%i.", middleEndDesktopAvgPrice);
 	}
 	if (highEndDesktopAvgPrice >= 700)
 	{
-		NSLog(@"This is a High-End Desktop with a price of %i.", highEndDesktopAvgPrice);
+		NSLog(@"This is a High-End Desktop with a price of $%i.", highEndDesktopAvgPrice);
 	}
 
 }

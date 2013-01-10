@@ -9,24 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "DesktopBuildBase.h"
 
-typedef enum {
-	MONITOR = 0,
-	SPEAKERS,
-	CABLES,
-	KEYBOARD,
-	MOUSE
-} accessoriesEnum;
 @interface DesktopBuildAccessories : DesktopBuildBase
-{
-	int accessoriesEnum;
-}
 
 //Arrays of company brands for each piece:
-@property NSArray * monitorBrands;
-@property NSArray * speakerBrands;
-@property NSArray * cablesBrands;
-@property NSArray * keyboardBrands;
-@property NSArray * mouseBrands;
+@property NSArray * externalAccessories;
 //Average price range for each piece:
 @property int monitorPrice;
 @property int speakerPrice;
@@ -34,5 +20,7 @@ typedef enum {
 @property int keyboardPrice;
 @property int mousePrice;
 
+-(void)arrayPrintAccessories;
+-(void)intPrintAccessories;
 
 @end

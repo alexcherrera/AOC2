@@ -20,8 +20,10 @@
 @property NSString * centralProcessingUnitName;
 @property NSString * powerSupplyUnitName;
 @property NSString * opticalDriveName;
+@property NSString * hardDrive;
+@property NSString * solidStateDrive;
 @property NSString * randomAccessMemoryName;
 
--(void) towerCaseParts;
+-(void)towerCasePartandShortNames;
 
 @end

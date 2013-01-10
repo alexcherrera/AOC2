@@ -10,16 +10,40 @@
 
 @implementation DesktopBuildAccessories
 
-@synthesize monitorBrands, speakerBrands, cablesBrands, keyboardBrands, mouseBrands, monitorPrice, speakerPrice, cablesPrice, keyboardPrice, mousePrice;
+@synthesize externalAccessories, monitorPrice, speakerPrice, cablesPrice, keyboardPrice, mousePrice;
+
 
 -(id)init
 {
 	self = [super init];
 	if (self != nil)
 	{
-	
+		[self setExternalAccessories: nil];
+		[self setMonitorPrice: 60];
+		[self setSpeakerPrice: 30];
+		[self setCablesPrice: 4];
+		[self setKeyboardPrice: 10];
+		[self setMousePrice: 8];
+		
 	}
 	return self;
 }
 
+-(void)arrayPrintAccessories
+{
+	NSLog(@"%@", [externalAccessories objectAtIndex:0]);
+	NSLog(@"%@", [externalAccessories objectAtIndex:1]);
+	NSLog(@"%@", [externalAccessories objectAtIndex:2]);
+	NSLog(@"%@", [externalAccessories objectAtIndex:3]);
+	NSLog(@"%@", [externalAccessories objectAtIndex:4]);
+}
+
+-(void)intPrintAccessories
+{
+	NSLog(@"$%i", monitorPrice);
+	NSLog(@"$%i", speakerPrice);
+	NSLog(@"$%i", cablesPrice);
+	NSLog(@"$%i", keyboardPrice);
+	NSLog(@"$%i", mousePrice);
+}
 @end
