@@ -28,13 +28,13 @@ typedef enum {
 @property int lowEndDesktopAvgPrice;
 @property int middleEndDesktopAvgPrice;
 @property int highEndDesktopAvgPrice;
-@property int customDesktopTotalPrice;
+@property int customDesktopAvgTotalPrice;
 
 -(id)init;
 
 -(void)printDesktopTypes;
 -(void)printDesktopFunction;
 -(void)printAvgPrice;
--(void)calculateTotalPrice;
+-(void)calculateAvgTotalPrice;
 
 @end

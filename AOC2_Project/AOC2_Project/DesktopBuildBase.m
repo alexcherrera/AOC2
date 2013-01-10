@@ -10,7 +10,7 @@
 
 @implementation DesktopBuildBase
 //Makes the getters and setters:
-@synthesize desktopTypes, desktopFunctionLow, desktopFunctionMiddle, desktopFunctionHigh, lowEndDesktopAvgPrice, middleEndDesktopAvgPrice, highEndDesktopAvgPrice, customDesktopTotalPrice;
+@synthesize desktopTypes, desktopFunctionLow, desktopFunctionMiddle, desktopFunctionHigh, lowEndDesktopAvgPrice, middleEndDesktopAvgPrice, highEndDesktopAvgPrice, customDesktopAvgTotalPrice;
 
 -(id)init
 {
@@ -21,10 +21,6 @@
 		[self setDesktopFunctionLow: nil];
 		[self setDesktopFunctionMiddle: nil];
 		[self setDesktopFunctionHigh: nil];
-		[self setLowEndDesktopAvgPrice: 0];
-		[self setMiddleEndDesktopAvgPrice: 0];
-		[self setHighEndDesktopAvgPrice: 0];
-		[self setCustomDesktopTotalPrice: 0];
 	}
 	return self;
 }
@@ -63,9 +59,11 @@
 	}
 
 }
--(void)calculateTotalPrice
+//Calculation for overwrite:
+-(void)calculateAvgTotalPrice
 {
-	NSLog(@"The total price of the custom build Desktop is %d", customDesktopTotalPrice);
+	[self setCustomDesktopAvgTotalPrice:((lowEndDesktopAvgPrice + middleEndDesktopAvgPrice + highEndDesktopAvgPrice) / 3 )];
+		NSLog(@"The average price of the custom build Desktop is %d", customDesktopAvgTotalPrice);
 }
 
 @end

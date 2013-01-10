@@ -17,7 +17,7 @@
 	self = [super init];
 	if (self != nil)
 	{
-		[self setLowEndDesktopAvgPrice: 100];
+		[self setLowEndDesktopAvgPrice: 300];
 		[self setMiddleEndDesktopAvgPrice: 500];
 		[self setHighEndDesktopAvgPrice: 800];
 		[self setTowerName1: @"Tower"];
@@ -47,5 +47,6 @@
 	NSLog(@"%@.", [towerCaseParts objectAtIndex:8]);
 	NSLog(@"%@.", [towerCaseParts objectAtIndex:9]);
 }
+
 
 @end

@@ -9,25 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "DesktopBuildBase.h"
 
-//Security Software Enum
-typedef enum {
-	NORTON = 0,
-	BARRACUDA,
-	MCAFEE,
-	KASPERSKY
-}securityEnum;
-//Operating Software Enum
-typedef enum {
-	MAC	= 0,
-	WINDOWS,
-	LINUX
-}operatingSystemEnum;
-
 @interface DesktopBuildSoftware : DesktopBuildBase
-{
-	int securityEnum;
-	int operatingSystemEnum;
-}
+
+//Arrays of the virus protection software:
+@property NSArray * virusSoftware;
+@property NSArray * operatingSystemSoftware;
 
 //Strings of the Company name of the OS:
 @property NSString * macCompany;

@@ -10,14 +10,15 @@
 
 @implementation DesktopBuildSoftware
 
-@synthesize macCompany, windowsCompany;
+@synthesize virusSoftware, operatingSystemSoftware, macCompany, windowsCompany;
+
 
 -(id)init
 {
 	self = [super init];
 	if (self != nil)
 	{
-	
+		
 	}
 	return self;
 }

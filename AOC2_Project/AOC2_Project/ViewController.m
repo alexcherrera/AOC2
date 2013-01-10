@@ -24,7 +24,7 @@
 	DesktopBuildInternal * internalDesktop = (DesktopBuildInternal *)[DesktopBuildFactory makeNewDesktop:INTERNAL];
 	if (internalDesktop !=nil)
 	{	//Desktop Type:
-		NSArray * theDesktopTypes = [[NSArray alloc] initWithObjects:@"Low-End Desktops", @"Middle-End Desktops", @"High-End Desktop", nil];
+		NSArray * theDesktopTypes = [[NSArray alloc] initWithObjects: @"Low-End Desktops", @"Middle-End Desktops", @"High-End Desktop", nil];
 		[internalDesktop setDesktopTypes: theDesktopTypes];
 		[internalDesktop printDesktopTypes];
 		//Desktop Function Low-End:
@@ -40,7 +40,7 @@
 		//Low-End Desktop Average Price:
 		[internalDesktop printAvgPrice];
 		//Tower/Case internal parts:
-		NSArray * theTowerCaseParts = [[NSArray alloc] initWithObjects:@"MotherBoard", @"Central Processing Unit", @"Power Supply Unit", @"Optical Drive", @"Hard Drive", @"Solid State Drive", @"Random Access Memory", @"Graphic's Card", @"Fan/Cooling System", @"Cables", nil];
+		NSArray * theTowerCaseParts = [[NSArray alloc] initWithObjects: @"MotherBoard", @"Central Processing Unit", @"Power Supply Unit", @"Optical Drive", @"Hard Drive", @"Solid State Drive", @"Random Access Memory", @"Graphic's Card", @"Fan/Cooling System", @"Cables", nil];
 		[internalDesktop setTowerCaseParts:theTowerCaseParts];
 		[internalDesktop towerCasePartandShortNames];
 	}
@@ -49,10 +49,23 @@
 	if (accessories != nil)
 	{
 		//External Accessories:
-		NSArray * theExternalAccessories = [[NSArray alloc] initWithObjects:@"Monitor", @"Speakers", @"Keyboard", @"Mouse", @"Cables",  nil];
+		NSArray * theExternalAccessories = [[NSArray alloc] initWithObjects: @"Monitor", @"Speakers", @"Keyboard", @"Mouse", @"Cables",  nil];
 		[accessories setExternalAccessories: theExternalAccessories];
 		[accessories arrayPrintAccessories];
 		[accessories intPrintAccessories];
+		[accessories customDesktopAvgTotalPrice];
+	}
+	//Working with the Software subclass:
+	DesktopBuildSoftware * software = (DesktopBuildSoftware *)[DesktopBuildFactory makeNewDesktop:SOFTWARE];
+	if (software != nil)
+	{
+		//Virus protection software array:
+		NSArray * theVirusSoftware = [[NSArray alloc] initWithObjects: @"Norton", @"Barracuda", @"McAfee", @"Kaspersky", nil];
+		[software setVirusSoftware: theVirusSoftware];
+		//Operating system software array:
+		NSArray * theOperatingSystemSoftware = [[NSArray alloc] initWithObjects:@"Mac", @"Windows", @"Linux", nil];
+		[software setOperatingSystemSoftware:theOperatingSystemSoftware];
+		
 	}
 	
 	
