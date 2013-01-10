@@ -105,6 +105,18 @@
 		[accessories intPrintAccessories];
 		[accessories customDesktopAvgTotalPrice];
 		[accessories calculateAvgTotalPrice];
+		//External Accessories Label:
+		externalAccessoriesLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 260.0f, 310.0f, 60.0f)];
+		if (externalAccessoriesLabel != nil)
+		{
+			externalAccessoriesLabel.backgroundColor = [UIColor blackColor];
+			externalAccessoriesLabel.textColor = [UIColor whiteColor];
+			externalAccessoriesLabel.text = [NSString stringWithFormat: @"The accessories and there average prices are: %@ $%d, %@ $%d, %@ $%d, %@ $%d, and %@ $%d.", [theExternalAccessories objectAtIndex:0], [accessories monitorPrice], [theExternalAccessories objectAtIndex:1], [accessories speakerPrice], [theExternalAccessories objectAtIndex:2], [accessories cablesPrice], [theExternalAccessories objectAtIndex:3], [accessories keyboardPrice], [theExternalAccessories objectAtIndex:4], [accessories mousePrice]];
+			externalAccessoriesLabel.textAlignment = NSTextAlignmentLeft;
+			externalAccessoriesLabel.numberOfLines = 3;
+			externalAccessoriesLabel.font = [UIFont fontWithName:@"Arial" size:12];
+		}
+		[self.view addSubview: externalAccessoriesLabel];
 	}
 	//Working with the Software subclass:
 	DesktopBuildSoftware * software = (DesktopBuildSoftware *)[DesktopBuildFactory makeNewDesktop:SOFTWARE];
@@ -125,6 +137,30 @@
 			NSLog(@"%@",[theOperatingSystemSoftware objectAtIndex:o]);
 		}
 		[software calculateAvgTotalPrice];
+		//Virus Software Label:
+		virusLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 330.0f, 310.0f, 40.0f)];
+		if (virusLabel != nil)
+		{
+			virusLabel.backgroundColor = [UIColor blackColor];
+			virusLabel.textColor = [UIColor whiteColor];
+			virusLabel.text = [NSString stringWithFormat: @"The virus protection software are: %@, %@, %@, and %@.", [theVirusSoftware objectAtIndex:0], [theVirusSoftware objectAtIndex:1], [theVirusSoftware objectAtIndex:2], [theVirusSoftware objectAtIndex:3]];
+			virusLabel.textAlignment = NSTextAlignmentLeft;
+			virusLabel.numberOfLines = 2;
+			virusLabel.font = [UIFont fontWithName:@"Arial" size:12];
+		}
+		[self.view addSubview: virusLabel];
+		//Operating System Software Label:
+		operatingSystemLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 380.0f, 310.0f, 40.0f)];
+		if (operatingSystemLabel != nil)
+		{
+			operatingSystemLabel.backgroundColor = [UIColor blackColor];
+			operatingSystemLabel.textColor = [UIColor whiteColor];
+			operatingSystemLabel.text = [NSString stringWithFormat: @"The Operating System  software are: %@, %@, and %@.", [theVirusSoftware objectAtIndex:0], [theVirusSoftware objectAtIndex:1], [theVirusSoftware objectAtIndex:2]];
+			operatingSystemLabel.textAlignment = NSTextAlignmentLeft;
+			operatingSystemLabel.numberOfLines = 2;
+			operatingSystemLabel.font = [UIFont fontWithName:@"Arial" size:12];
+		}
+		[self.view addSubview: operatingSystemLabel];
 	}
 	
 	

@@ -20,10 +20,8 @@
 	UILabel * internalClassCalculateLabel;
 	//Accessories SubClass Labels:
 	UILabel * externalAccessoriesLabel;
-	UILabel * avgAccessoriesPriceLabel;
-	//Accessories SubClass Labels:
+	//Software SubClass Labels:
 	UILabel * virusLabel;
 	UILabel * operatingSystemLabel;
-	UILabel * avgSoftwarePriceLabel;
 }
 @end
