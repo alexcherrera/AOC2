@@ -20,7 +20,7 @@
 		return[[DesktopBuildAccessories alloc] init];
 	  } else if (buildDesktop ==SOFTWARE)
 	    {
-			return [[DesktopBuildAccessories alloc] init];
+			return [[DesktopBuildSoftware alloc] init];
 		}
 	else return nil;
 }

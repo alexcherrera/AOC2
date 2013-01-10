@@ -63,7 +63,7 @@
 -(void)calculateAvgTotalPrice
 {
 	[self setCustomDesktopAvgTotalPrice:((lowEndDesktopAvgPrice + middleEndDesktopAvgPrice + highEndDesktopAvgPrice) / 3 )];
-		NSLog(@"The average price of the custom build Desktop is %d", customDesktopAvgTotalPrice);
+		NSLog(@"The average price of the custom build Desktop is $%d", customDesktopAvgTotalPrice);
 }
 
 @end

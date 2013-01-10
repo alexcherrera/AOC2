@@ -46,4 +46,11 @@
 	NSLog(@"$%i", keyboardPrice);
 	NSLog(@"$%i", mousePrice);
 }
+
+-(void)calculateAvgTotalPrice
+{
+	[self setCustomDesktopAvgTotalPrice:((monitorPrice + speakerPrice + cablesPrice + keyboardPrice + mousePrice) / 5)];
+	NSLog(@"Extra cost of $%i based on an average", self.customDesktopAvgTotalPrice);
+}
+
 @end

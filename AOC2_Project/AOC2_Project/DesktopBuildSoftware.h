@@ -19,4 +19,7 @@
 @property NSString * macCompany;
 @property NSString * windowsCompany;
 
+@property int avgVirusPrice;
+@property int avgOperatingSystemPrice;
+
 @end
