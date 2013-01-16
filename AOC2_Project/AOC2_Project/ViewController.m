@@ -12,6 +12,10 @@
 #import "DesktopBuildInternal.h"
 #import "DesktopBuildAccessories.h"
 #import "DesktopBuildSoftware.h"
+#import "ViewInternal.h"
+#import "ViewAccessories.h"
+#import "ViewSoftware.h"
+
 @interface ViewController ()
 
 @end
@@ -32,7 +36,7 @@
 		appTitleLabel.text = titleNameText;
 		appTitleLabel.textAlignment = NSTextAlignmentCenter;
 	}
-	[self.view addSubview: appTitleLabel];
+	//[self.view addSubview: appTitleLabel];
 	//Working with the internal subclass:
 	DesktopBuildInternal * internalDesktop = (DesktopBuildInternal *)[DesktopBuildFactory makeNewDesktop:INTERNAL];
 	if (internalDesktop != nil)
@@ -68,7 +72,7 @@
 			desktopTypesLabel.numberOfLines = 4;
 			desktopTypesLabel.font = [UIFont fontWithName: @"Arial" size: 12];
 		}
-		[self.view addSubview: desktopTypesLabel];
+		//[self.view addSubview: desktopTypesLabel];
 		//Internal parts that make the desktop:
 		partsAndShortNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 140.0f, 310.0f, 80.0f)];
 		if (partsAndShortNameLabel != nil)
@@ -80,7 +84,7 @@
 			partsAndShortNameLabel.numberOfLines = 5;
 			partsAndShortNameLabel.font = [UIFont fontWithName: @"Arial" size: 12];
 		}
-		[self.view addSubview: partsAndShortNameLabel];
+		//[self.view addSubview: partsAndShortNameLabel];
 		//The calculation Label for the internal SubClass:
 		internalClassCalculateLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 230.0f, 310.0f, 20.0f)];
 		if (internalClassCalculateLabel != nil)
@@ -92,7 +96,7 @@
 			internalClassCalculateLabel.numberOfLines = 1;
 			internalClassCalculateLabel.font = [UIFont fontWithName:@"Arial" size:12];
 		}
-		[self.view addSubview: internalClassCalculateLabel];
+		//[self.view addSubview: internalClassCalculateLabel];
 	}
 	//Working with the Accessories subclass:
 	DesktopBuildAccessories * accessories = (DesktopBuildAccessories *)[DesktopBuildFactory makeNewDesktop:ACCESSORIES];
@@ -116,7 +120,7 @@
 			externalAccessoriesLabel.numberOfLines = 3;
 			externalAccessoriesLabel.font = [UIFont fontWithName:@"Arial" size:12];
 		}
-		[self.view addSubview: externalAccessoriesLabel];
+		//[self.view addSubview: externalAccessoriesLabel];
 	}
 	//Working with the Software subclass:
 	DesktopBuildSoftware * software = (DesktopBuildSoftware *)[DesktopBuildFactory makeNewDesktop:SOFTWARE];
@@ -148,7 +152,7 @@
 			virusLabel.numberOfLines = 2;
 			virusLabel.font = [UIFont fontWithName:@"Arial" size:12];
 		}
-		[self.view addSubview: virusLabel];
+		//[self.view addSubview: virusLabel];
 		//Operating System Software Label:
 		operatingSystemLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 380.0f, 310.0f, 40.0f)];
 		if (operatingSystemLabel != nil)
@@ -160,7 +164,7 @@
 			operatingSystemLabel.numberOfLines = 2;
 			operatingSystemLabel.font = [UIFont fontWithName:@"Arial" size:12];
 		}
-		[self.view addSubview: operatingSystemLabel];
+		//[self.view addSubview: operatingSystemLabel];
 	}
 	
 	
@@ -172,6 +176,52 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)onClick:(id)sender
+{
+	//ViewInternal init:
+	ViewInternal * viewInternal = [[ViewInternal alloc] initWithNibName:@"ViewInternal" bundle:nil];
+	//ViewAccessories init:
+	ViewAccessories * viewAccessories = [[ViewAccessories alloc] initWithNibName:@"ViewAccessories" bundle:nil];
+	//ViewSoftware init:
+	ViewSoftware * viewSoftware = [[ViewSoftware alloc] initWithNibName:@"ViewSoftware" bundle:nil];
+	//Checking if not equal to nil:
+	if (viewInternal != nil)
+	{
+		[self presentViewController:viewInternal animated:true completion:nil];
+		NSLog(@"internal");
+	}
+	else if (viewAccessories != nil)
+	{
+		[self presentViewController:viewAccessories animated:true completion:nil];
+		NSLog(@"accessories");
+	}
+	else if (viewSoftware != nil)
+	{
+		[self presentViewController:viewSoftware animated:true completion:nil];
+		NSLog(@"software");
+	}
+	//Display buttons being enabled:
+	UIButton * displayButton = (UIButton *) sender;
+	if (displayButton != nil)
+	{
+		if (displayButton.tag == 0)
+		{
+			internalButton.enabled = true;
+			NSLog(@"Internal button was pressed");
+		}
+	    else if (displayButton.tag == 1)
+		{
+			accessoriesButton.enabled = true;
+			NSLog(@"Accessories button was pressed");
+		}
+		else if (displayButton.tag == 2)
+		{
+			softwareButton.enabled = true;
+			NSLog(@"Software button was pressed");
+		}
+	}
 }
 
 @end
