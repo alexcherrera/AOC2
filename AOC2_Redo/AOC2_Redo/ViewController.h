@@ -14,13 +14,16 @@
 	IBOutlet UIButton * internalButton;
 	IBOutlet UIButton * accessoriesButton;
 	IBOutlet UIButton * softwareButton;
+	IBOutlet UIButton * calculateButton;
 	IBOutlet UILabel * textClassLabel;
 	IBOutlet UIStepper * clickStep;
 	IBOutlet UITextField * choosenPackagesTxtFld;
 }
 
+
 -(IBAction)onClick:(id)sender;
 
 -(IBAction)clickStepper:(id)sender;
+
 
 @end

@@ -22,6 +22,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+
 -(IBAction)onClick:(id)sender
 {
 	//ViewInternal init:
@@ -42,15 +43,20 @@
 			if (viewInternal != nil)
 			{
 				NSLog(@"internal");
-			//Enable or diable the button:
+				//Enable or diable the button:
 				internalButton.enabled = false;//Picked by user
 				accessoriesButton.enabled = true;
 				softwareButton.enabled = true;
-			
+				//Setting the color effect when the button is clicked:
 				internalButton.alpha = 0.5;
 				accessoriesButton.alpha = 1.0;
 				softwareButton.alpha = 1.0;
 				NSLog(@"Internal button was pressed");
+				//Inserts the text package in the text field:
+				if (internalButton.enabled == false)
+				{
+					choosenPackagesTxtFld.text = @"Internal Packages";
+				}
 			}
 		}
 		 else if (displayButton.tag == 1)
@@ -62,11 +68,16 @@
 				internalButton.enabled = true;
 				accessoriesButton.enabled = false;//Picked by user
 				softwareButton.enabled = true;
-			
+				//Setting the color effect when the button is clicked:
 				internalButton.alpha = 1.0;
 				accessoriesButton.alpha = 0.5;
 				softwareButton.alpha = 1.0;
 				NSLog(@"Accessories button was pressed");
+				//Inserts the text package in the text field:
+				if (accessoriesButton.enabled == false)
+				{
+					choosenPackagesTxtFld.text = @"Accessories Packages";
+				}
 			}
 		}
 		else if (displayButton.tag == 2)
@@ -78,11 +89,17 @@
 				internalButton.enabled = true;
 				accessoriesButton.enabled = true;
 				softwareButton.enabled = false;//Picked by user
-			
+				//Setting the color effect when the button is clicked:
 				internalButton.alpha = 1.0;
 				accessoriesButton.alpha = 1.0;
 				softwareButton.alpha = 0.5;
 				NSLog(@"Software button was pressed");
+				//Inserts the text package in the text field:
+				if (softwareButton.enabled == false)
+				{
+					choosenPackagesTxtFld.text = @"Software Packages";
+				}
+
 			}
 		}
 	}
