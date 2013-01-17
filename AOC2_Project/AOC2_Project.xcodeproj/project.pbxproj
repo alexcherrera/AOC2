@@ -10,12 +10,9 @@
 		8800826116A58EEB001EEF5B /* accessories-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8800825E16A58EEB001EEF5B /* accessories-pic.jpg */; };
 		8800826216A58EEB001EEF5B /* internal-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8800825F16A58EEB001EEF5B /* internal-pic.jpg */; };
 		8800826316A58EEB001EEF5B /* software-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8800826016A58EEB001EEF5B /* software-pic.jpg */; };
-		880082AA16A5AEAD001EEF5B /* ViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 880082A816A5AEAD001EEF5B /* ViewInternal.m */; };
-		880082AB16A5AEAD001EEF5B /* ViewInternal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880082A916A5AEAD001EEF5B /* ViewInternal.xib */; };
-		880082AF16A5BF8A001EEF5B /* ViewAccessories.m in Sources */ = {isa = PBXBuildFile; fileRef = 880082AD16A5BF8A001EEF5B /* ViewAccessories.m */; };
-		880082B016A5BF8A001EEF5B /* ViewAccessories.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880082AE16A5BF8A001EEF5B /* ViewAccessories.xib */; };
-		880082B416A5BFAB001EEF5B /* ViewSoftware.m in Sources */ = {isa = PBXBuildFile; fileRef = 880082B216A5BFAB001EEF5B /* ViewSoftware.m */; };
-		880082B516A5BFAB001EEF5B /* ViewSoftware.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880082B316A5BFAB001EEF5B /* ViewSoftware.xib */; };
+		880082C116A71F37001EEF5B /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880082BF16A71F37001EEF5B /* OtherViewController.m */; };
+		880082C216A71F37001EEF5B /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880082C016A71F37001EEF5B /* OtherViewController.xib */; };
+		880082C416A74F8C001EEF5B /* DesktopBuildInternal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880082C316A74F8C001EEF5B /* DesktopBuildInternal.xib */; };
 		88FF1441169CE0CB00202751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FF1440169CE0CB00202751 /* UIKit.framework */; };
 		88FF1443169CE0CB00202751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FF1442169CE0CB00202751 /* Foundation.framework */; };
 		88FF1445169CE0CB00202751 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FF1444169CE0CB00202751 /* CoreGraphics.framework */; };
@@ -38,15 +35,10 @@
 		8800825E16A58EEB001EEF5B /* accessories-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "accessories-pic.jpg"; sourceTree = "<group>"; };
 		8800825F16A58EEB001EEF5B /* internal-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "internal-pic.jpg"; sourceTree = "<group>"; };
 		8800826016A58EEB001EEF5B /* software-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "software-pic.jpg"; sourceTree = "<group>"; };
-		880082A716A5AEAD001EEF5B /* ViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewInternal.h; sourceTree = "<group>"; };
-		880082A816A5AEAD001EEF5B /* ViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewInternal.m; sourceTree = "<group>"; };
-		880082A916A5AEAD001EEF5B /* ViewInternal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInternal.xib; sourceTree = "<group>"; };
-		880082AC16A5BF8A001EEF5B /* ViewAccessories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAccessories.h; sourceTree = "<group>"; };
-		880082AD16A5BF8A001EEF5B /* ViewAccessories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAccessories.m; sourceTree = "<group>"; };
-		880082AE16A5BF8A001EEF5B /* ViewAccessories.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewAccessories.xib; sourceTree = "<group>"; };
-		880082B116A5BFAB001EEF5B /* ViewSoftware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSoftware.h; sourceTree = "<group>"; };
-		880082B216A5BFAB001EEF5B /* ViewSoftware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSoftware.m; sourceTree = "<group>"; };
-		880082B316A5BFAB001EEF5B /* ViewSoftware.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewSoftware.xib; sourceTree = "<group>"; };
+		880082BE16A71F37001EEF5B /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		880082BF16A71F37001EEF5B /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		880082C016A71F37001EEF5B /* OtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		880082C316A74F8C001EEF5B /* DesktopBuildInternal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesktopBuildInternal.xib; sourceTree = "<group>"; };
 		88FF143C169CE0CB00202751 /* AOC2_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FF1440169CE0CB00202751 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		88FF1442169CE0CB00202751 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,18 +116,12 @@
 				8800826016A58EEB001EEF5B /* software-pic.jpg */,
 				88FF144F169CE0CB00202751 /* AppDelegate.h */,
 				88FF1450169CE0CB00202751 /* AppDelegate.m */,
-				880082A716A5AEAD001EEF5B /* ViewInternal.h */,
-				880082A816A5AEAD001EEF5B /* ViewInternal.m */,
-				880082A916A5AEAD001EEF5B /* ViewInternal.xib */,
-				880082AC16A5BF8A001EEF5B /* ViewAccessories.h */,
-				880082AD16A5BF8A001EEF5B /* ViewAccessories.m */,
-				880082AE16A5BF8A001EEF5B /* ViewAccessories.xib */,
-				880082B116A5BFAB001EEF5B /* ViewSoftware.h */,
-				880082B216A5BFAB001EEF5B /* ViewSoftware.m */,
-				880082B316A5BFAB001EEF5B /* ViewSoftware.xib */,
 				88FF1458169CE0CB00202751 /* ViewController.h */,
 				88FF1459169CE0CB00202751 /* ViewController.m */,
 				88FF145B169CE0CC00202751 /* ViewController.xib */,
+				880082BE16A71F37001EEF5B /* OtherViewController.h */,
+				880082BF16A71F37001EEF5B /* OtherViewController.m */,
+				880082C016A71F37001EEF5B /* OtherViewController.xib */,
 				88FF1447169CE0CB00202751 /* Supporting Files */,
 				88FF14D8169D10FD00202751 /* DesktopBuildFactory.h */,
 				88FF14D9169D10FD00202751 /* DesktopBuildFactory.m */,
@@ -143,6 +129,7 @@
 				88FF14DD169D111500202751 /* DesktopBuildBase.m */,
 				88FF14DF169D114000202751 /* DesktopBuildInternal.h */,
 				88FF14E0169D114100202751 /* DesktopBuildInternal.m */,
+				880082C316A74F8C001EEF5B /* DesktopBuildInternal.xib */,
 				88FF14E2169D118300202751 /* DesktopBuildAccessories.h */,
 				88FF14E3169D118300202751 /* DesktopBuildAccessories.m */,
 				88FF14E5169D11E000202751 /* DesktopBuildSoftware.h */,
@@ -224,9 +211,8 @@
 				8800826116A58EEB001EEF5B /* accessories-pic.jpg in Resources */,
 				8800826216A58EEB001EEF5B /* internal-pic.jpg in Resources */,
 				8800826316A58EEB001EEF5B /* software-pic.jpg in Resources */,
-				880082AB16A5AEAD001EEF5B /* ViewInternal.xib in Resources */,
-				880082B016A5BF8A001EEF5B /* ViewAccessories.xib in Resources */,
-				880082B516A5BFAB001EEF5B /* ViewSoftware.xib in Resources */,
+				880082C216A71F37001EEF5B /* OtherViewController.xib in Resources */,
+				880082C416A74F8C001EEF5B /* DesktopBuildInternal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +231,7 @@
 				88FF14E1169D114100202751 /* DesktopBuildInternal.m in Sources */,
 				88FF14E4169D118300202751 /* DesktopBuildAccessories.m in Sources */,
 				88FF14E7169D11E000202751 /* DesktopBuildSoftware.m in Sources */,
-				880082AA16A5AEAD001EEF5B /* ViewInternal.m in Sources */,
-				880082AF16A5BF8A001EEF5B /* ViewAccessories.m in Sources */,
-				880082B416A5BFAB001EEF5B /* ViewSoftware.m in Sources */,
+				880082C116A71F37001EEF5B /* OtherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

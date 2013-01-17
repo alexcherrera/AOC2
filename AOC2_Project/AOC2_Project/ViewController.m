@@ -12,9 +12,7 @@
 #import "DesktopBuildInternal.h"
 #import "DesktopBuildAccessories.h"
 #import "DesktopBuildSoftware.h"
-#import "ViewInternal.h"
-#import "ViewAccessories.h"
-#import "ViewSoftware.h"
+#import "OtherViewController.h"
 
 @interface ViewController ()
 
@@ -57,7 +55,7 @@
 		//Low-End Desktop Average Price:
 		[internalDesktop printAvgPrice];
 		//Tower/Case internal parts:
-		NSArray * theTowerCaseParts = [[NSArray alloc] initWithObjects: @"MotherBoard", @"Central Processing Unit", @"Power Supply Unit", @"Optical Drive", @"Hard Drive", @"Solid State Drive", @"Random Access Memory", @"Graphic's Card", @"Fan/Cooling System", @"Cables", nil];
+		theTowerCaseParts = [[NSArray alloc] initWithObjects: @"MotherBoard", @"Central Processing Unit", @"Power Supply Unit", @"Optical Drive", @"Hard Drive", @"Solid State Drive", @"Random Access Memory", @"Graphic's Card", @"Fan/Cooling System", @"Cables", nil];
 		[internalDesktop setTowerCaseParts:theTowerCaseParts];
 		[internalDesktop towerCasePartandShortNames];
 		[internalDesktop calculateAvgTotalPrice];
@@ -181,45 +179,82 @@
 -(IBAction)onClick:(id)sender
 {
 	//ViewInternal init:
-	ViewInternal * viewInternal = [[ViewInternal alloc] initWithNibName:@"ViewInternal" bundle:nil];
+	OtherViewController * viewInternal = [[OtherViewController alloc] initWithNibName:@"OtherViewController" bundle:nil];
+	
 	//ViewAccessories init:
-	ViewAccessories * viewAccessories = [[ViewAccessories alloc] initWithNibName:@"ViewAccessories" bundle:nil];
+	OtherViewController * viewAccessories = [[OtherViewController alloc] initWithNibName:@"OtherViewController" bundle:nil];
 	//ViewSoftware init:
-	ViewSoftware * viewSoftware = [[ViewSoftware alloc] initWithNibName:@"ViewSoftware" bundle:nil];
-	//Checking if not equal to nil:
-	if (viewInternal != nil)
-	{
-		[self presentViewController:viewInternal animated:true completion:nil];
-		NSLog(@"internal");
-	}
-	else if (viewAccessories != nil)
-	{
-		[self presentViewController:viewAccessories animated:true completion:nil];
-		NSLog(@"accessories");
-	}
-	else if (viewSoftware != nil)
-	{
-		[self presentViewController:viewSoftware animated:true completion:nil];
-		NSLog(@"software");
-	}
+	OtherViewController * viewSoftware = [[OtherViewController alloc] initWithNibName:@"OtherViewController" bundle:nil];
+	
 	//Display buttons being enabled:
 	UIButton * displayButton = (UIButton *) sender;
 	if (displayButton != nil)
 	{
 		if (displayButton.tag == 0)
 		{
-			internalButton.enabled = true;
-			NSLog(@"Internal button was pressed");
-		}
-	    else if (displayButton.tag == 1)
-		{
+			//Checking if not equal to nil:
+			if (viewInternal != nil)
+			{
+				viewInternal = [theTowerCaseParts objectAtIndex:0];
+				//[self presentViewController:viewInternal animated:true completion:nil];
+				NSLog(@"internal");
+				NSLog(@"%@", viewInternal);
+			
+			//Enable or diable the button:
+			internalButton.enabled = false;
 			accessoriesButton.enabled = true;
+			softwareButton.enabled = true;
+			NSLog(@"Internal button was pressed");
+			}
+		}
+		else if (displayButton.tag == 1)
+		{
+			//Checking if not equal to nil:
+			if (viewAccessories != nil)
+			{
+				//[self presentViewController:viewAccessories animated:true completion:nil];
+				NSLog(@"accessories");
+			
+			internalButton.enabled = true;
+			accessoriesButton.enabled = false;
+			softwareButton.enabled = true;
 			NSLog(@"Accessories button was pressed");
+			}
 		}
 		else if (displayButton.tag == 2)
 		{
-			softwareButton.enabled = true;
+			//Checking if not equal to nil:
+			if (viewSoftware != nil)
+			{
+			//	[self presentViewController:viewSoftware animated:true completion:nil];
+				NSLog(@"software");
+			
+			internalButton.enabled = true;
+			accessoriesButton.enabled = true;
+			softwareButton.enabled = false;
 			NSLog(@"Software button was pressed");
+			}
+		}
+	}
+}
+-(IBAction)changeSegment:(id)sender
+{
+	UISegmentedControl * segmentControl = (UISegmentedControl *)sender;
+	if (segmentControl != nil)
+	{
+		int indexSegment = segmentControl.selectedSegmentIndex;
+		NSLog(@"Your on index %i", indexSegment);
+		switch (indexSegment)
+		{
+			case 0:
+				self.view.backgroundColor = [UIColor blueColor];
+				break;
+			case 1:
+				self.view.backgroundColor = [UIColor grayColor];
+				break;
+			case 2:
+				self.view.backgroundColor = [UIColor greenColor];
+		
 		}
 	}
 }

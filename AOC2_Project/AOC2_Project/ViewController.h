@@ -31,8 +31,17 @@
 	IBOutlet UIImage * internalImage;
 	IBOutlet UIImage * accessoriesImage;
 	IBOutlet UIImage * softwareImage;
+	
+	IBOutlet UIBarButtonItem * backImageButton;
+	
+	NSArray * theTowerCaseParts;
+	
+	int incrementValue;
+	
+
 }
 
 -(IBAction)onClick:(id)sender;
+-(IBAction)changeSegment:(id)sender;
 
 @end

@@ -10,7 +10,9 @@
 #import "DesktopBuildBase.h"
 
 @interface DesktopBuildInternal : DesktopBuildBase
-
+{
+	IBOutlet UILabel * moboLabel;
+}
 //Arrays of internal desktop parts brands for each piece:
 @property NSArray * towerCaseParts;
 //Other names used to represent pieces:
@@ -25,5 +27,7 @@
 @property NSString * randomAccessMemoryName;
 
 -(void)towerCasePartandShortNames;
+
+
 
 @end
