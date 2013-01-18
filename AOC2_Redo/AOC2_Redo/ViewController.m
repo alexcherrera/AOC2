@@ -295,15 +295,19 @@
 	}
 }
 
--(IBAction)aboutInfo:(id)sender
-{
-
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)aboutInfo:(id)sender
+{
+	OtherViewController * secondView1 = [[OtherViewController alloc] initWithNibName:@"OverViewController" bundle:nil];
+	if (secondView1 != nil)
+	{
+		[self presentViewController:secondView1 animated:true completion:nil];
+	}
 }
 
 @end

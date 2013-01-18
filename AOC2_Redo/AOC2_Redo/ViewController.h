@@ -30,6 +30,7 @@
 	IBOutlet UILabel * textClassLabel;
 	IBOutlet UIStepper * clickStep;
 	IBOutlet UITextField * choosenPackagesTxtFld;
+	IBOutlet UIButton * secondView;
 	
 	
 	NSArray * theTowerCaseParts;

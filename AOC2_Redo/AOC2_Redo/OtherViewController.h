@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface OtherViewController : UIViewController
+{
+	IBOutlet UILabel * myInfo;
+}
+
+-(IBAction)backClick:(id)sender;
 
 @end

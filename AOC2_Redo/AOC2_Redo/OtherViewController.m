@@ -25,6 +25,10 @@
 
 - (void)viewDidLoad
 {
+	self.view.backgroundColor = [UIColor blueColor];
+	
+	myInfo.text = @"Alexander Herrera";
+
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -35,4 +39,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)backClick:(id)sender
+{
+	[self dismissViewControllerAnimated: true completion: nil];
+}
 @end
