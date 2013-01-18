@@ -1,13 +1,33 @@
 //
 //  DesktopBuildInternal.h
-//  AOC2_Redo
+//  AOC2_Project
 //
-//  Created by Alexander Herrera on 1/17/13.
+//  Created by Alexander Herrera on 1/8/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "DesktopBuildBase.h"
 
-@interface DesktopBuildInternal : UIViewController
+@interface DesktopBuildInternal : DesktopBuildBase
+{
+	IBOutlet UILabel * moboLabel;
+}
+//Arrays of internal desktop parts brands for each piece:
+@property NSArray * towerCaseParts;
+//Other names used to represent pieces:
+@property NSString * towerName1;
+@property NSString * towerName2;
+@property NSString * motherBoardName;
+@property NSString * centralProcessingUnitName;
+@property NSString * powerSupplyUnitName;
+@property NSString * opticalDriveName;
+@property NSString * hardDrive;
+@property NSString * solidStateDrive;
+@property NSString * randomAccessMemoryName;
+
+-(void)towerCasePartandShortNames;
+
+
 
 @end

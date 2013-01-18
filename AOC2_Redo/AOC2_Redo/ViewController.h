@@ -10,6 +10,18 @@
 
 @interface ViewController : UIViewController
 {
+	//Application Title Label:
+	UILabel * appTitleLabel;
+	NSString * titleNameText;
+	//Internal SubClass Labels:
+	UILabel * desktopTypesLabel;
+	UILabel * partsAndShortNameLabel;
+	UILabel * internalClassCalculateLabel;
+	//Accessories SubClass Labels:
+	UILabel * externalAccessoriesLabel;
+	//Software SubClass Labels:
+	UILabel * virusLabel;
+	UILabel * operatingSystemLabel;
 	//Views UIButtons:
 	IBOutlet UIButton * internalButton;
 	IBOutlet UIButton * accessoriesButton;
@@ -18,6 +30,10 @@
 	IBOutlet UILabel * textClassLabel;
 	IBOutlet UIStepper * clickStep;
 	IBOutlet UITextField * choosenPackagesTxtFld;
+	
+	
+	NSArray * theTowerCaseParts;
+	int recentValue;
 }
 
 
@@ -25,5 +41,8 @@
 
 -(IBAction)clickStepper:(id)sender;
 
+-(IBAction)changeSegment:(id)sender;
+
+-(IBAction)aboutInfo:(id)sender;
 
 @end

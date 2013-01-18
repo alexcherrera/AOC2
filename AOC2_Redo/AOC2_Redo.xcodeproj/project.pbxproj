@@ -23,6 +23,12 @@
 		880083D616A8766E001EEF5B /* accessories-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 880083D316A8766E001EEF5B /* accessories-pic.jpg */; };
 		880083D716A8766E001EEF5B /* internal-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 880083D416A8766E001EEF5B /* internal-pic.jpg */; };
 		880083D816A8766E001EEF5B /* software-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 880083D516A8766E001EEF5B /* software-pic.jpg */; };
+		880083EC16A8A9DC001EEF5B /* DesktopBuildAccessories.m in Sources */ = {isa = PBXBuildFile; fileRef = 880083E216A8A9DA001EEF5B /* DesktopBuildAccessories.m */; };
+		880083ED16A8A9DC001EEF5B /* DesktopBuildBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 880083E416A8A9DB001EEF5B /* DesktopBuildBase.m */; };
+		880083EE16A8A9DC001EEF5B /* DesktopBuildFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 880083E616A8A9DB001EEF5B /* DesktopBuildFactory.m */; };
+		880083EF16A8A9DC001EEF5B /* DesktopBuildInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 880083E816A8A9DC001EEF5B /* DesktopBuildInternal.m */; };
+		880083F016A8A9DC001EEF5B /* DesktopBuildInternal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880083E916A8A9DC001EEF5B /* DesktopBuildInternal.xib */; };
+		880083F116A8A9DC001EEF5B /* DesktopBuildSoftware.m in Sources */ = {isa = PBXBuildFile; fileRef = 880083EB16A8A9DC001EEF5B /* DesktopBuildSoftware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,17 @@
 		880083D316A8766E001EEF5B /* accessories-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "accessories-pic.jpg"; sourceTree = "<group>"; };
 		880083D416A8766E001EEF5B /* internal-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "internal-pic.jpg"; sourceTree = "<group>"; };
 		880083D516A8766E001EEF5B /* software-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "software-pic.jpg"; sourceTree = "<group>"; };
+		880083E116A8A9DA001EEF5B /* DesktopBuildAccessories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopBuildAccessories.h; sourceTree = "<group>"; };
+		880083E216A8A9DA001EEF5B /* DesktopBuildAccessories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopBuildAccessories.m; sourceTree = "<group>"; };
+		880083E316A8A9DB001EEF5B /* DesktopBuildBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopBuildBase.h; sourceTree = "<group>"; };
+		880083E416A8A9DB001EEF5B /* DesktopBuildBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopBuildBase.m; sourceTree = "<group>"; };
+		880083E516A8A9DB001EEF5B /* DesktopBuildFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopBuildFactory.h; sourceTree = "<group>"; };
+		880083E616A8A9DB001EEF5B /* DesktopBuildFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopBuildFactory.m; sourceTree = "<group>"; };
+		880083E716A8A9DB001EEF5B /* DesktopBuildInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopBuildInternal.h; sourceTree = "<group>"; };
+		880083E816A8A9DC001EEF5B /* DesktopBuildInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopBuildInternal.m; sourceTree = "<group>"; };
+		880083E916A8A9DC001EEF5B /* DesktopBuildInternal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesktopBuildInternal.xib; sourceTree = "<group>"; };
+		880083EA16A8A9DC001EEF5B /* DesktopBuildSoftware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopBuildSoftware.h; sourceTree = "<group>"; };
+		880083EB16A8A9DC001EEF5B /* DesktopBuildSoftware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopBuildSoftware.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +119,17 @@
 				880083C316A874EF001EEF5B /* ViewController.h */,
 				880083C416A874EF001EEF5B /* ViewController.m */,
 				880083C616A874EF001EEF5B /* ViewController.xib */,
+				880083E316A8A9DB001EEF5B /* DesktopBuildBase.h */,
+				880083E416A8A9DB001EEF5B /* DesktopBuildBase.m */,
+				880083E516A8A9DB001EEF5B /* DesktopBuildFactory.h */,
+				880083E616A8A9DB001EEF5B /* DesktopBuildFactory.m */,
+				880083E716A8A9DB001EEF5B /* DesktopBuildInternal.h */,
+				880083E816A8A9DC001EEF5B /* DesktopBuildInternal.m */,
+				880083E916A8A9DC001EEF5B /* DesktopBuildInternal.xib */,
+				880083E116A8A9DA001EEF5B /* DesktopBuildAccessories.h */,
+				880083E216A8A9DA001EEF5B /* DesktopBuildAccessories.m */,
+				880083EA16A8A9DC001EEF5B /* DesktopBuildSoftware.h */,
+				880083EB16A8A9DC001EEF5B /* DesktopBuildSoftware.m */,
 				880083B216A874EE001EEF5B /* Supporting Files */,
 				880083CE16A875D7001EEF5B /* OtherViewController.h */,
 				880083CF16A875D7001EEF5B /* OtherViewController.m */,
@@ -184,6 +212,7 @@
 				880083D616A8766E001EEF5B /* accessories-pic.jpg in Resources */,
 				880083D716A8766E001EEF5B /* internal-pic.jpg in Resources */,
 				880083D816A8766E001EEF5B /* software-pic.jpg in Resources */,
+				880083F016A8A9DC001EEF5B /* DesktopBuildInternal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +227,11 @@
 				880083BC16A874EE001EEF5B /* AppDelegate.m in Sources */,
 				880083C516A874EF001EEF5B /* ViewController.m in Sources */,
 				880083D116A875D7001EEF5B /* OtherViewController.m in Sources */,
+				880083EC16A8A9DC001EEF5B /* DesktopBuildAccessories.m in Sources */,
+				880083ED16A8A9DC001EEF5B /* DesktopBuildBase.m in Sources */,
+				880083EE16A8A9DC001EEF5B /* DesktopBuildFactory.m in Sources */,
+				880083EF16A8A9DC001EEF5B /* DesktopBuildInternal.m in Sources */,
+				880083F116A8A9DC001EEF5B /* DesktopBuildSoftware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +348,7 @@
 				880083CD16A874EF001EEF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

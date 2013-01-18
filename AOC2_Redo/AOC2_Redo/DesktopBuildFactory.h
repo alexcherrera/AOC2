@@ -1,13 +1,20 @@
 //
 //  DesktopBuildFactory.h
-//  AOC2_Redo
+//  AOC2_Project
 //
-//  Created by Alexander Herrera on 1/17/13.
+//  Created by Alexander Herrera on 1/8/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "DesktopBuildBase.h"
+#import "DesktopBuildInternal.h"
+#import "DesktopBuildAccessories.h"
+#import "DesktopBuildSoftware.h"
 
-@interface DesktopBuildFactory : UIViewController
+@interface DesktopBuildFactory : NSObject
+
++(DesktopBuildBase *)makeNewDesktop:(int)buildDesktop;
+
 
 @end

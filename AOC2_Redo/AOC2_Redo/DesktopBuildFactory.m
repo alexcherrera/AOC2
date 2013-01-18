@@ -1,38 +1,28 @@
 //
 //  DesktopBuildFactory.m
-//  AOC2_Redo
+//  AOC2_Project
 //
-//  Created by Alexander Herrera on 1/17/13.
+//  Created by Alexander Herrera on 1/8/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
 #import "DesktopBuildFactory.h"
 
-@interface DesktopBuildFactory ()
-
-@end
-
 @implementation DesktopBuildFactory
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
++(DesktopBuildBase *)makeNewDesktop:(int)buildDesktop
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	if (buildDesktop == INTERNAL)
+	{
+		return [[DesktopBuildInternal alloc] init];
+	} else if (buildDesktop == ACCESSORIES)
+	  {
+		return[[DesktopBuildAccessories alloc] init];
+	  } else if (buildDesktop ==SOFTWARE)
+	    {
+			return [[DesktopBuildSoftware alloc] init];
+		}
+	else return nil;
 }
 
 @end

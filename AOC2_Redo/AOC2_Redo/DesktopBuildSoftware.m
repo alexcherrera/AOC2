@@ -1,38 +1,39 @@
 //
 //  DesktopBuildSoftware.m
-//  AOC2_Redo
+//  AOC2_Project
 //
-//  Created by Alexander Herrera on 1/17/13.
+//  Created by Alexander Herrera on 1/8/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
 #import "DesktopBuildSoftware.h"
 
-@interface DesktopBuildSoftware ()
-
-@end
-
 @implementation DesktopBuildSoftware
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize virusSoftware, operatingSystemSoftware, macCompany, windowsCompany, avgVirusPrice, avgOperatingSystemPrice;
+
+
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+	self = [super init];
+	if (self != nil)
+	{
+		[self setVirusSoftware: nil];
+		[self setOperatingSystemSoftware: nil];
+		[self setMacCompany: @"Apple"];
+		[self setWindowsCompany: @"MicroSoft"];
+		[self setAvgVirusPrice: 50];
+		[self setAvgOperatingSystemPrice:100];
+	}
+	return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
+//-(void)
 
-- (void)didReceiveMemoryWarning
+-(void)calculateAvgTotalPrice
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	[self setCustomDesktopAvgTotalPrice:((avgVirusPrice + avgOperatingSystemPrice) / 2)];
+	NSLog(@"Extra cost of $%i based on an average", self.customDesktopAvgTotalPrice);
 }
 
 @end
