@@ -18,6 +18,8 @@
 		88BEFE2916ADE75E0000E19F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE2816ADE75E0000E19F /* Default-568h@2x.png */; };
 		88BEFE2C16ADE75E0000E19F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEFE2B16ADE75E0000E19F /* ViewController.m */; };
 		88BEFE2F16ADE75E0000E19F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE2D16ADE75E0000E19F /* ViewController.xib */; };
+		88BEFE3816ADFDFE0000E19F /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEFE3616ADFDFE0000E19F /* AddEventView.m */; };
+		88BEFE3916ADFDFE0000E19F /* AddEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE3716ADFDFE0000E19F /* AddEventView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		88BEFE2A16ADE75E0000E19F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		88BEFE2B16ADE75E0000E19F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88BEFE2E16ADE75E0000E19F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		88BEFE3516ADFDFE0000E19F /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
+		88BEFE3616ADFDFE0000E19F /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
+		88BEFE3716ADFDFE0000E19F /* AddEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				88BEFE2B16ADE75E0000E19F /* ViewController.m */,
 				88BEFE2D16ADE75E0000E19F /* ViewController.xib */,
 				88BEFE1916ADE75E0000E19F /* Supporting Files */,
+				88BEFE3516ADFDFE0000E19F /* AddEventView.h */,
+				88BEFE3616ADFDFE0000E19F /* AddEventView.m */,
+				88BEFE3716ADFDFE0000E19F /* AddEventView.xib */,
 			);
 			path = EventPlannerApp;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				88BEFE2716ADE75E0000E19F /* Default@2x.png in Resources */,
 				88BEFE2916ADE75E0000E19F /* Default-568h@2x.png in Resources */,
 				88BEFE2F16ADE75E0000E19F /* ViewController.xib in Resources */,
+				88BEFE3916ADFDFE0000E19F /* AddEventView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				88BEFE1F16ADE75E0000E19F /* main.m in Sources */,
 				88BEFE2316ADE75E0000E19F /* AppDelegate.m in Sources */,
 				88BEFE2C16ADE75E0000E19F /* ViewController.m in Sources */,
+				88BEFE3816ADFDFE0000E19F /* AddEventView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
