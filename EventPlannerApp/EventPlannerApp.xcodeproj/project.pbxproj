@@ -7,110 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88BEFE1316ADE75E0000E19F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BEFE1216ADE75E0000E19F /* UIKit.framework */; };
-		88BEFE1516ADE75E0000E19F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BEFE1416ADE75E0000E19F /* Foundation.framework */; };
-		88BEFE1716ADE75E0000E19F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BEFE1616ADE75E0000E19F /* CoreGraphics.framework */; };
-		88BEFE1D16ADE75E0000E19F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE1B16ADE75E0000E19F /* InfoPlist.strings */; };
-		88BEFE1F16ADE75E0000E19F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEFE1E16ADE75E0000E19F /* main.m */; };
-		88BEFE2316ADE75E0000E19F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEFE2216ADE75E0000E19F /* AppDelegate.m */; };
-		88BEFE2516ADE75E0000E19F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE2416ADE75E0000E19F /* Default.png */; };
-		88BEFE2716ADE75E0000E19F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE2616ADE75E0000E19F /* Default@2x.png */; };
-		88BEFE2916ADE75E0000E19F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE2816ADE75E0000E19F /* Default-568h@2x.png */; };
-		88BEFE2C16ADE75E0000E19F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEFE2B16ADE75E0000E19F /* ViewController.m */; };
-		88BEFE2F16ADE75E0000E19F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE2D16ADE75E0000E19F /* ViewController.xib */; };
-		88BEFE3816ADFDFE0000E19F /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEFE3616ADFDFE0000E19F /* AddEventView.m */; };
-		88BEFE3916ADFDFE0000E19F /* AddEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BEFE3716ADFDFE0000E19F /* AddEventView.xib */; };
+		882A4E6816AF11FC00FDA7C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A4E6716AF11FC00FDA7C0 /* UIKit.framework */; };
+		882A4E6A16AF11FC00FDA7C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A4E6916AF11FC00FDA7C0 /* Foundation.framework */; };
+		882A4E6C16AF11FC00FDA7C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A4E6B16AF11FC00FDA7C0 /* CoreGraphics.framework */; };
+		882A4E7216AF11FC00FDA7C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 882A4E7016AF11FC00FDA7C0 /* InfoPlist.strings */; };
+		882A4E7416AF11FC00FDA7C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A4E7316AF11FC00FDA7C0 /* main.m */; };
+		882A4E7816AF11FC00FDA7C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A4E7716AF11FC00FDA7C0 /* AppDelegate.m */; };
+		882A4E7A16AF11FC00FDA7C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 882A4E7916AF11FC00FDA7C0 /* Default.png */; };
+		882A4E7C16AF11FC00FDA7C0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882A4E7B16AF11FC00FDA7C0 /* Default@2x.png */; };
+		882A4E7E16AF11FC00FDA7C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882A4E7D16AF11FC00FDA7C0 /* Default-568h@2x.png */; };
+		882A4E8116AF11FC00FDA7C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A4E8016AF11FC00FDA7C0 /* ViewController.m */; };
+		882A4E8416AF11FC00FDA7C0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A4E8216AF11FC00FDA7C0 /* ViewController.xib */; };
+		882A4E9816B06E9400FDA7C0 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A4E9616B06E9400FDA7C0 /* AddEventViewController.m */; };
+		882A4E9916B06E9400FDA7C0 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A4E9716B06E9400FDA7C0 /* AddEventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		88BEFE0E16ADE75E0000E19F /* EventPlannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPlannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88BEFE1216ADE75E0000E19F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		88BEFE1416ADE75E0000E19F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		88BEFE1616ADE75E0000E19F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		88BEFE1A16ADE75E0000E19F /* EventPlannerApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventPlannerApp-Info.plist"; sourceTree = "<group>"; };
-		88BEFE1C16ADE75E0000E19F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88BEFE1E16ADE75E0000E19F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88BEFE2016ADE75E0000E19F /* EventPlannerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventPlannerApp-Prefix.pch"; sourceTree = "<group>"; };
-		88BEFE2116ADE75E0000E19F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		88BEFE2216ADE75E0000E19F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88BEFE2416ADE75E0000E19F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		88BEFE2616ADE75E0000E19F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		88BEFE2816ADE75E0000E19F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		88BEFE2A16ADE75E0000E19F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88BEFE2B16ADE75E0000E19F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		88BEFE2E16ADE75E0000E19F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		88BEFE3516ADFDFE0000E19F /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
-		88BEFE3616ADFDFE0000E19F /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
-		88BEFE3716ADFDFE0000E19F /* AddEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventView.xib; sourceTree = "<group>"; };
+		882A4E6316AF11FC00FDA7C0 /* EventPlannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPlannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		882A4E6716AF11FC00FDA7C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		882A4E6916AF11FC00FDA7C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		882A4E6B16AF11FC00FDA7C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		882A4E6F16AF11FC00FDA7C0 /* EventPlannerApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventPlannerApp-Info.plist"; sourceTree = "<group>"; };
+		882A4E7116AF11FC00FDA7C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		882A4E7316AF11FC00FDA7C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		882A4E7516AF11FC00FDA7C0 /* EventPlannerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventPlannerApp-Prefix.pch"; sourceTree = "<group>"; };
+		882A4E7616AF11FC00FDA7C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		882A4E7716AF11FC00FDA7C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		882A4E7916AF11FC00FDA7C0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		882A4E7B16AF11FC00FDA7C0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		882A4E7D16AF11FC00FDA7C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		882A4E7F16AF11FC00FDA7C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		882A4E8016AF11FC00FDA7C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		882A4E8316AF11FC00FDA7C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		882A4E9516B06E9400FDA7C0 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEventViewController.h; path = ../AddEventViewController.h; sourceTree = "<group>"; };
+		882A4E9616B06E9400FDA7C0 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEventViewController.m; path = ../AddEventViewController.m; sourceTree = "<group>"; };
+		882A4E9716B06E9400FDA7C0 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddEventViewController.xib; path = ../AddEventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88BEFE0B16ADE75E0000E19F /* Frameworks */ = {
+		882A4E6016AF11FC00FDA7C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BEFE1316ADE75E0000E19F /* UIKit.framework in Frameworks */,
-				88BEFE1516ADE75E0000E19F /* Foundation.framework in Frameworks */,
-				88BEFE1716ADE75E0000E19F /* CoreGraphics.framework in Frameworks */,
+				882A4E6816AF11FC00FDA7C0 /* UIKit.framework in Frameworks */,
+				882A4E6A16AF11FC00FDA7C0 /* Foundation.framework in Frameworks */,
+				882A4E6C16AF11FC00FDA7C0 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88BEFE0316ADE75D0000E19F = {
+		882A4E5816AF11FC00FDA7C0 = {
 			isa = PBXGroup;
 			children = (
-				88BEFE1816ADE75E0000E19F /* EventPlannerApp */,
-				88BEFE1116ADE75E0000E19F /* Frameworks */,
-				88BEFE0F16ADE75E0000E19F /* Products */,
+				882A4E6D16AF11FC00FDA7C0 /* EventPlannerApp */,
+				882A4E6616AF11FC00FDA7C0 /* Frameworks */,
+				882A4E6416AF11FC00FDA7C0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88BEFE0F16ADE75E0000E19F /* Products */ = {
+		882A4E6416AF11FC00FDA7C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88BEFE0E16ADE75E0000E19F /* EventPlannerApp.app */,
+				882A4E6316AF11FC00FDA7C0 /* EventPlannerApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88BEFE1116ADE75E0000E19F /* Frameworks */ = {
+		882A4E6616AF11FC00FDA7C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88BEFE1216ADE75E0000E19F /* UIKit.framework */,
-				88BEFE1416ADE75E0000E19F /* Foundation.framework */,
-				88BEFE1616ADE75E0000E19F /* CoreGraphics.framework */,
+				882A4E6716AF11FC00FDA7C0 /* UIKit.framework */,
+				882A4E6916AF11FC00FDA7C0 /* Foundation.framework */,
+				882A4E6B16AF11FC00FDA7C0 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		88BEFE1816ADE75E0000E19F /* EventPlannerApp */ = {
+		882A4E6D16AF11FC00FDA7C0 /* EventPlannerApp */ = {
 			isa = PBXGroup;
 			children = (
-				88BEFE2116ADE75E0000E19F /* AppDelegate.h */,
-				88BEFE2216ADE75E0000E19F /* AppDelegate.m */,
-				88BEFE2A16ADE75E0000E19F /* ViewController.h */,
-				88BEFE2B16ADE75E0000E19F /* ViewController.m */,
-				88BEFE2D16ADE75E0000E19F /* ViewController.xib */,
-				88BEFE1916ADE75E0000E19F /* Supporting Files */,
-				88BEFE3516ADFDFE0000E19F /* AddEventView.h */,
-				88BEFE3616ADFDFE0000E19F /* AddEventView.m */,
-				88BEFE3716ADFDFE0000E19F /* AddEventView.xib */,
+				882A4E7616AF11FC00FDA7C0 /* AppDelegate.h */,
+				882A4E7716AF11FC00FDA7C0 /* AppDelegate.m */,
+				882A4E7F16AF11FC00FDA7C0 /* ViewController.h */,
+				882A4E8016AF11FC00FDA7C0 /* ViewController.m */,
+				882A4E8216AF11FC00FDA7C0 /* ViewController.xib */,
+				882A4E9516B06E9400FDA7C0 /* AddEventViewController.h */,
+				882A4E9616B06E9400FDA7C0 /* AddEventViewController.m */,
+				882A4E9716B06E9400FDA7C0 /* AddEventViewController.xib */,
+				882A4E6E16AF11FC00FDA7C0 /* Supporting Files */,
 			);
 			path = EventPlannerApp;
 			sourceTree = "<group>";
 		};
-		88BEFE1916ADE75E0000E19F /* Supporting Files */ = {
+		882A4E6E16AF11FC00FDA7C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				88BEFE1A16ADE75E0000E19F /* EventPlannerApp-Info.plist */,
-				88BEFE1B16ADE75E0000E19F /* InfoPlist.strings */,
-				88BEFE1E16ADE75E0000E19F /* main.m */,
-				88BEFE2016ADE75E0000E19F /* EventPlannerApp-Prefix.pch */,
-				88BEFE2416ADE75E0000E19F /* Default.png */,
-				88BEFE2616ADE75E0000E19F /* Default@2x.png */,
-				88BEFE2816ADE75E0000E19F /* Default-568h@2x.png */,
+				882A4E6F16AF11FC00FDA7C0 /* EventPlannerApp-Info.plist */,
+				882A4E7016AF11FC00FDA7C0 /* InfoPlist.strings */,
+				882A4E7316AF11FC00FDA7C0 /* main.m */,
+				882A4E7516AF11FC00FDA7C0 /* EventPlannerApp-Prefix.pch */,
+				882A4E7916AF11FC00FDA7C0 /* Default.png */,
+				882A4E7B16AF11FC00FDA7C0 /* Default@2x.png */,
+				882A4E7D16AF11FC00FDA7C0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,13 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88BEFE0D16ADE75E0000E19F /* EventPlannerApp */ = {
+		882A4E6216AF11FC00FDA7C0 /* EventPlannerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88BEFE3216ADE75E0000E19F /* Build configuration list for PBXNativeTarget "EventPlannerApp" */;
+			buildConfigurationList = 882A4E8716AF11FC00FDA7C0 /* Build configuration list for PBXNativeTarget "EventPlannerApp" */;
 			buildPhases = (
-				88BEFE0A16ADE75E0000E19F /* Sources */,
-				88BEFE0B16ADE75E0000E19F /* Frameworks */,
-				88BEFE0C16ADE75E0000E19F /* Resources */,
+				882A4E5F16AF11FC00FDA7C0 /* Sources */,
+				882A4E6016AF11FC00FDA7C0 /* Frameworks */,
+				882A4E6116AF11FC00FDA7C0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -132,78 +132,78 @@
 			);
 			name = EventPlannerApp;
 			productName = EventPlannerApp;
-			productReference = 88BEFE0E16ADE75E0000E19F /* EventPlannerApp.app */;
+			productReference = 882A4E6316AF11FC00FDA7C0 /* EventPlannerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88BEFE0516ADE75E0000E19F /* Project object */ = {
+		882A4E5A16AF11FC00FDA7C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Alexander Herrera";
 			};
-			buildConfigurationList = 88BEFE0816ADE75E0000E19F /* Build configuration list for PBXProject "EventPlannerApp" */;
+			buildConfigurationList = 882A4E5D16AF11FC00FDA7C0 /* Build configuration list for PBXProject "EventPlannerApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 88BEFE0316ADE75D0000E19F;
-			productRefGroup = 88BEFE0F16ADE75E0000E19F /* Products */;
+			mainGroup = 882A4E5816AF11FC00FDA7C0;
+			productRefGroup = 882A4E6416AF11FC00FDA7C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88BEFE0D16ADE75E0000E19F /* EventPlannerApp */,
+				882A4E6216AF11FC00FDA7C0 /* EventPlannerApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88BEFE0C16ADE75E0000E19F /* Resources */ = {
+		882A4E6116AF11FC00FDA7C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BEFE1D16ADE75E0000E19F /* InfoPlist.strings in Resources */,
-				88BEFE2516ADE75E0000E19F /* Default.png in Resources */,
-				88BEFE2716ADE75E0000E19F /* Default@2x.png in Resources */,
-				88BEFE2916ADE75E0000E19F /* Default-568h@2x.png in Resources */,
-				88BEFE2F16ADE75E0000E19F /* ViewController.xib in Resources */,
-				88BEFE3916ADFDFE0000E19F /* AddEventView.xib in Resources */,
+				882A4E7216AF11FC00FDA7C0 /* InfoPlist.strings in Resources */,
+				882A4E7A16AF11FC00FDA7C0 /* Default.png in Resources */,
+				882A4E7C16AF11FC00FDA7C0 /* Default@2x.png in Resources */,
+				882A4E7E16AF11FC00FDA7C0 /* Default-568h@2x.png in Resources */,
+				882A4E8416AF11FC00FDA7C0 /* ViewController.xib in Resources */,
+				882A4E9916B06E9400FDA7C0 /* AddEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88BEFE0A16ADE75E0000E19F /* Sources */ = {
+		882A4E5F16AF11FC00FDA7C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BEFE1F16ADE75E0000E19F /* main.m in Sources */,
-				88BEFE2316ADE75E0000E19F /* AppDelegate.m in Sources */,
-				88BEFE2C16ADE75E0000E19F /* ViewController.m in Sources */,
-				88BEFE3816ADFDFE0000E19F /* AddEventView.m in Sources */,
+				882A4E7416AF11FC00FDA7C0 /* main.m in Sources */,
+				882A4E7816AF11FC00FDA7C0 /* AppDelegate.m in Sources */,
+				882A4E8116AF11FC00FDA7C0 /* ViewController.m in Sources */,
+				882A4E9816B06E9400FDA7C0 /* AddEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		88BEFE1B16ADE75E0000E19F /* InfoPlist.strings */ = {
+		882A4E7016AF11FC00FDA7C0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				88BEFE1C16ADE75E0000E19F /* en */,
+				882A4E7116AF11FC00FDA7C0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		88BEFE2D16ADE75E0000E19F /* ViewController.xib */ = {
+		882A4E8216AF11FC00FDA7C0 /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				88BEFE2E16ADE75E0000E19F /* en */,
+				882A4E8316AF11FC00FDA7C0 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		88BEFE3016ADE75E0000E19F /* Debug */ = {
+		882A4E8516AF11FC00FDA7C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		88BEFE3116ADE75E0000E19F /* Release */ = {
+		882A4E8616AF11FC00FDA7C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,24 +261,28 @@
 			};
 			name = Release;
 		};
-		88BEFE3316ADE75E0000E19F /* Debug */ = {
+		882A4E8816AF11FC00FDA7C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EventPlannerApp/EventPlannerApp-Prefix.pch";
 				INFOPLIST_FILE = "EventPlannerApp/EventPlannerApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		88BEFE3416ADE75E0000E19F /* Release */ = {
+		882A4E8916AF11FC00FDA7C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EventPlannerApp/EventPlannerApp-Prefix.pch";
 				INFOPLIST_FILE = "EventPlannerApp/EventPlannerApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -286,24 +290,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88BEFE0816ADE75E0000E19F /* Build configuration list for PBXProject "EventPlannerApp" */ = {
+		882A4E5D16AF11FC00FDA7C0 /* Build configuration list for PBXProject "EventPlannerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88BEFE3016ADE75E0000E19F /* Debug */,
-				88BEFE3116ADE75E0000E19F /* Release */,
+				882A4E8516AF11FC00FDA7C0 /* Debug */,
+				882A4E8616AF11FC00FDA7C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88BEFE3216ADE75E0000E19F /* Build configuration list for PBXNativeTarget "EventPlannerApp" */ = {
+		882A4E8716AF11FC00FDA7C0 /* Build configuration list for PBXNativeTarget "EventPlannerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88BEFE3316ADE75E0000E19F /* Debug */,
-				88BEFE3416ADE75E0000E19F /* Release */,
+				882A4E8816AF11FC00FDA7C0 /* Debug */,
+				882A4E8916AF11FC00FDA7C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 88BEFE0516ADE75E0000E19F /* Project object */;
+	rootObject = 882A4E5A16AF11FC00FDA7C0 /* Project object */;
 }

@@ -2,7 +2,7 @@
 //  main.m
 //  EventPlannerApp
 //
-//  Created by Alexander Herrera on 1/21/13.
+//  Created by Alexander Herrera on 1/22/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 

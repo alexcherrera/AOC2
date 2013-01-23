@@ -1,18 +1,19 @@
 //
-//  AddEventView.m
+//  AddEventViewController.m
 //  EventPlannerApp
 //
 //  Created by Alexander Herrera on 1/23/13.
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
-#import "AddEventView.h"
+#import "AddEventViewController.h"
 
-@interface AddEventView ()
+
+@interface AddEventViewController ()
 
 @end
 
-@implementation AddEventView
+@implementation AddEventViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,4 +36,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)saveEventInfoBtn:(id)sender
+{
+
+}
+
+- (IBAction)closeKeyboardBtn:(id)sender
+{
+
+}
 @end
