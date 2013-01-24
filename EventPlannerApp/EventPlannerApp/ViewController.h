@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "AddEventViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddEvent>
+//Property's of each Outlet UI element:
 @property (weak, nonatomic) IBOutlet UILabel *datePlanner;
 @property (weak, nonatomic) IBOutlet UITextView *savedViewEvents;
+@property (weak, nonatomic) IBOutlet UIButton *addEventButton;
 
+//Action taking place when the add button is clicked:
 - (IBAction)addEvtBtn:(id)sender;
 
 @end

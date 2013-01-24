@@ -14,8 +14,8 @@
 @end
 
 @implementation ViewController
-
-@synthesize datePlanner, savedViewEvents;
+//Synthesize each to have for getter and setters:
+@synthesize datePlanner, savedViewEvents, addEventButton;
 
 - (void)viewDidLoad
 {
@@ -31,10 +31,23 @@
 
 - (IBAction)addEvtBtn:(id)sender
 {
+	//Init the second view and allowing the button when clicked to go to the second view:
 	AddEventViewController * addEventViewController = [[AddEventViewController alloc] initWithNibName: @"AddEventViewController" bundle:nil];
 	if (addEventViewController != nil)
 	{
+		//This lets addEventViewController know that ViewController exist:
+		addEventViewController.delegate = self;//self means what object will be receiving the messages from the addEventViewController:
+		NSLog(@"add1");
 		[self presentViewController:addEventViewController animated:YES completion:nil];
+		NSLog(@"add2");
 	}
 }
+
+-(void)showSaved:(NSString *)savedInfoTxt
+{
+	savedViewEvents.text = savedInfoTxt;
+	NSLog(@"%@", savedViewEvents.text);
+}
+
+
 @end
