@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Alexander Herrera. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h> 
 
 //Going to be implemented in the ViewController:
@@ -14,13 +13,15 @@
 
 @required
 
+- (void)showSaved:(NSString *)savedInfoTxt; //To display the saved info.
 
+@optional
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;// return NO to disallow editing.
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;// called when 'return' key pressed. return NO to ignore.
 
-- (void)showSaved:(NSString *)savedInfoTxt; //To display the saved info.
+
 
 @end
 

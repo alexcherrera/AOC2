@@ -45,8 +45,19 @@
 
 -(void)showSaved:(NSString *)savedInfoTxt
 {
+	NSString * appendString = [NSString stringWithFormat: @"\n %@", savedInfoTxt];
+
+	NSString * defaultTxt = @"Please enter new event here!";
+	NSLog(@"%@", defaultTxt);
+	if (savedInfoTxt == defaultTxt)
+	{
+		NSLog(@"error");
+	}
+	
 	savedViewEvents.text = savedInfoTxt;
 	NSLog(@"%@", savedViewEvents.text);
+	
+	savedViewEvents.text = [savedViewEvents.text stringByAppendingString:appendString];
 }
 
 

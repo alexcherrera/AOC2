@@ -34,6 +34,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+	/*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showKeyboard) name:UIKeyboardWillShowNotification object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideKeyboard) name:UIKeyboardWillHideNotification object:nil];*/
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -52,10 +59,11 @@
 	if (delegate != nil)
 	{
 		//This is going to call back ViewController
+		[delegate showSaved:textField.text];
 	}
-	NSString * savedTxt = textField.text;
-	NSLog(@"%@", savedTxt);
-	//[closeButton resignFirstResponder];
+	//NSString * savedTxt = textField.text;
+	//NSLog(@"%@", savedTxt);
+	//
 	[self dismissViewControllerAnimated:YES completion:nil];
 	
 	return true;
@@ -72,18 +80,24 @@
 		{
 		
 			[self presentViewController:viewController animated:YES completion:nil];
+			
+			[delegate showSaved:eventTextField.text];
 		}
 	}
 }
 
 - (IBAction)closeKeyboardBtn:(id)sender
 {
-	if (sender == closeButton)
+	if (closeButton.enabled == true)
 	{
 		NSLog(@"in close");
 		NSString * saveTxt = eventTextField.text;
 		NSLog(@"%@", saveTxt);
-		[sender isFirstResponder];
+		[eventTextField resignFirstResponder];
+	}
+	else if (closeButton.tag == 0)
+	{
+		[eventTextField resignFirstResponder];
 	}
 	
 }
