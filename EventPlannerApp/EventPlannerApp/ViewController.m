@@ -43,30 +43,21 @@
 	}
 }
 
-- (void)showSaved:(NSString *)savedInfoTxt
+- (void)showSavedInfoTxt:(NSString *)savedInfoTxt
 {
 	
+	NSString * appendString = [NSString stringWithFormat: @"\n %@", savedInfoTxt];
 
-	/*NSString * defaultTxt = @"Please enter new event here!";
-	NSLog(@"%@", defaultTxt);
-	if (savedInfoTxt == defaultTxt)
-	{
-		NSLog(@"error");
-	}
-	else
-	{
-		NSLog(@"1");
-	}*/
-	NSString * appendString = [NSString stringWithFormat: @"\n %@ %@", savedInfoTxt, savedInfoDateTime];
-	//savedViewEvents.text = savedInfoTxt;
-	//NSLog(@"%@", savedViewEvents.text);
-	
 	savedViewEvents.text = [savedViewEvents.text stringByAppendingString:appendString];
 }
 
--(void)savedInfoDateTime:(NSString *)savedInfoDateTime
+- (void)savedInfoDateTime:(NSString *)savedInfoDateTime
 {
+	NSString * appendString = [NSString stringWithFormat: @"\n %@", savedInfoDateTime];
+	
 
+	
+	savedViewEvents.text = [savedViewEvents.text stringByAppendingString:appendString];
 }
 
 @end

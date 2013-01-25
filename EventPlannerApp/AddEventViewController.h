@@ -13,7 +13,7 @@
 
 @required
 //To display the saved info.
-- (void)showSaved:(NSString *)savedInfoTxt;
+- (void)showSavedInfoTxt:(NSString *)savedInfoTxt;
 - (void)savedInfoDateTime:(NSString *)savedInfoDateTime;
 
 @optional
@@ -31,7 +31,8 @@
 	//A callback and lets the AddEventViewController know about the ViewController:
 	id<AddEvent> delegate;
 	NSString * savedEventInfo;
-	//NSString *
+	NSString * stringDate;
+	NSDate * dateShow;
 }
 
 @property (strong) id<AddEvent> delegate;

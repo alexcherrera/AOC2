@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AddEventViewController.h"
 
-@interface ViewController : UIViewController <AddEvent, UITextFieldDelegate, UIPickerViewDelegate>
+@interface ViewController : UIViewController <AddEvent>
 //Property's of each Outlet UI element:
 @property (weak, nonatomic) IBOutlet UILabel * datePlanner;
 @property (weak, nonatomic) IBOutlet UITextView *savedViewEvents;

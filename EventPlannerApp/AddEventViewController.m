@@ -34,12 +34,6 @@
     // Do any additional setup after loading the view from its nib.
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-	/*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showKeyboard) name:UIKeyboardWillShowNotification object:nil];
-	
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideKeyboard) name:UIKeyboardWillHideNotification object:nil];*/
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -59,7 +53,7 @@
 	if (delegate != nil)
 	{
 		//This is going to call back ViewController
-		[delegate showSaved:textField.text];
+		[delegate showSavedInfoTxt:textField.text];
 	}
 	//NSString * savedTxt = textField.text;
 	//NSLog(@"%@", savedTxt);
@@ -75,13 +69,19 @@
 	if (delegate != nil)
 	{
 		NSLog(@"save");
-		/*ViewController * viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-		if (viewController != nil)
-		{*/
-			[delegate showSaved: eventTextField.text dateTime];
-			//[self presentViewController:viewController animated:YES completion:nil];
+	
+		NSDateFormatter * formattingDate = [[NSDateFormatter alloc] init];
+		if (formattingDate != nil)
+		{
+			//Change the format of the date and time:
+			[formattingDate setDateFormat:@"EEE, MMM d, yyyys h:mm a"];
+			NSLog(@"the %@", formattingDate);
+			stringDate = [formattingDate stringFromDate:dateShow];
+		}
+			//To display on the view:
+			[delegate showSavedInfoTxt: eventTextField.text];
+			[delegate savedInfoDateTime:stringDate];
 			[self dismissViewControllerAnimated:YES completion:nil];
-		//}
 	}
 }
 
@@ -96,6 +96,7 @@
 	}
 	else if (closeButton.tag == 0)
 	{
+		//To hide the keyboard:
 		[eventTextField resignFirstResponder];
 	}
 	
@@ -104,10 +105,11 @@
 - (IBAction)dateTimePickerChg:(id)sender
 {
 	UIDatePicker * datePicker = (UIDatePicker *) sender;
+	
 	if (datePicker != nil)
 	{	//To get the date:
-		NSDate * choosenDate = datePicker.date;
-		NSLog(@"%@", [choosenDate description]);
+		dateShow = datePicker.date;
+		NSLog(@"%@", [dateShow description]);
 	}
 }
 
