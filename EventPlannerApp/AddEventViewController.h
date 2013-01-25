@@ -12,8 +12,9 @@
 @protocol AddEvent <NSObject>
 
 @required
-
-- (void)showSaved:(NSString *)savedInfoTxt; //To display the saved info.
+//To display the saved info.
+- (void)showSaved:(NSString *)savedInfoTxt;
+- (void)savedInfoDateTime:(NSString *)savedInfoDateTime;
 
 @optional
 
@@ -28,7 +29,7 @@
 @interface AddEventViewController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate>
 {
 	//A callback and lets the AddEventViewController know about the ViewController:
-	id <AddEvent> delegate;
+	id<AddEvent> delegate;
 	NSString * savedEventInfo;
 	//NSString *
 }

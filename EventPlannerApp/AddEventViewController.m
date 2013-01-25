@@ -72,17 +72,16 @@
 
 - (IBAction)saveEventInfoBtn:(id)sender
 {
-	if (sender == saveButton)
+	if (delegate != nil)
 	{
 		NSLog(@"save");
-		ViewController * viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+		/*ViewController * viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
 		if (viewController != nil)
-		{
-		
-			[self presentViewController:viewController animated:YES completion:nil];
-			
-			[delegate showSaved:eventTextField.text];
-		}
+		{*/
+			[delegate showSaved: eventTextField.text dateTime];
+			//[self presentViewController:viewController animated:YES completion:nil];
+			[self dismissViewControllerAnimated:YES completion:nil];
+		//}
 	}
 }
 
@@ -104,7 +103,12 @@
 
 - (IBAction)dateTimePickerChg:(id)sender
 {
-
+	UIDatePicker * datePicker = (UIDatePicker *) sender;
+	if (datePicker != nil)
+	{	//To get the date:
+		NSDate * choosenDate = datePicker.date;
+		NSLog(@"%@", [choosenDate description]);
+	}
 }
 
 
