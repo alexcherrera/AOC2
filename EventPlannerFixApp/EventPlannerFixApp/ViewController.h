@@ -16,7 +16,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *savedViewEvents;
 @property (weak, nonatomic) IBOutlet UIButton *addEventButton;
 
-//Action taking place when the add button is clicked:
-- (IBAction)addEvtBtn:(id)sender;
+
+
+- (IBAction)saveButton:(id)sender;//Save button.
 
 @end
