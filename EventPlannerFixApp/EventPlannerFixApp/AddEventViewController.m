@@ -16,9 +16,69 @@
 
 @implementation AddEventViewController
 
-@synthesize closeButton, eventLabel, eventTextField, dateTimeLabel, dateTime, delegate;
+@synthesize closeButton = _closeButton;
+@synthesize eventLabel = _eventLabel;
+@synthesize eventTextField = _eventTextField;
+@synthesize dateTimeLabel = _dateTimeLabel;
+@synthesize dateTime = _dateTime;
+@synthesize delegate;
 @synthesize swipeLeftLabel = _swipeLeftLabel;
 @synthesize leftSwipe = _leftSwipe;
+
+//Getter method for the closeButton:
+- (UIButton *)closeButton
+{
+	return _closeButton;
+}
+//Setter method for the closeButton:
+- (void)setCloseButton:(UIButton *)closeButton
+{
+	_closeButton = closeButton;
+}
+
+//Getter method for the eventLabel:
+- (UILabel *)eventLabel
+{
+	return _eventLabel;
+}
+//Setter method for the eventLabel:
+- (void)setEventLabel:(UILabel *)eventLabel
+{
+	_eventLabel = eventLabel;
+}
+
+//Getter method for the eventTextField:
+- (UITextField *)eventTextField
+{
+	return _eventTextField;
+}
+//Setter method for the eventTextField:
+- (void)setEventTextField:(UITextField *)eventTextField
+{
+	_eventTextField = eventTextField;
+}
+
+//Getter method for the dateTimeLabel:
+- (UILabel *)dateTimeLabel
+{
+	return _dateTimeLabel;
+}
+//Setter method for the dateTimeLabel:
+- (void)setDateTimeLabel:(UILabel *)dateTimeLabel
+{
+	_dateTimeLabel = dateTimeLabel;
+}
+
+//Getter method for the dateTime:
+- (UIDatePicker *)dateTime
+{
+	return _dateTime;
+}
+//Setter method for the dateTime:
+- (void)setDateTime:(UIDatePicker *)dateTime
+{
+	_dateTime = dateTime;
+}
 
 //Getter method for the swipeLeftLabel:
 - (UILabel *)swipeLeftLabel
@@ -66,7 +126,7 @@
 			//To get the current date:
 			NSDate * currentDate = [NSDate date];
 			//Now to set the minimun date:
-			dateTime.minimumDate = currentDate;
+			_dateTime.minimumDate = currentDate;
 			if (formattingDate != nil)
 			{
 				//Change the format of the date and time:
@@ -74,13 +134,13 @@
 				NSLog(@"the %@", formattingDate);
 				stringDate = [formattingDate stringFromDate:dateShow];
 			}
-			if ([eventTextField.text isEqualToString:@"Please enter event here!"])
+			if ([_eventTextField.text isEqualToString:@"Please enter event here!"])
 			{
 				UIAlertView * noInputAlert = [[UIAlertView alloc] initWithTitle:@"No Event" message:@"Please enter an event:" delegate:self cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
 				[noInputAlert show];
 				NSLog(@"no");
 			}
-			if (dateTime.minimumDate == [NSDate date])
+			if (_dateTime.minimumDate == [NSDate date])
 			{
 				UIAlertView * datePickerAlert = [[UIAlertView alloc] initWithTitle:@"No Event" message:@"Please enter an event:" delegate:self cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
 				[datePickerAlert show];
@@ -89,7 +149,7 @@
 			{
 				UIAlertView * yesInputAlert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your event has been saved:" delegate:self cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
 				[yesInputAlert show];
-				savedEventInfo = eventTextField.text;
+				savedEventInfo = _eventTextField.text;
 				[delegate showSavedInfoTxt: savedEventInfo];
 				[delegate savedInfoDateTime: stringDate];
 				[self dismissViewControllerAnimated:YES completion:nil];
@@ -129,63 +189,24 @@
 	return YES;
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{	//Before it closes:
-	NSLog(@"return");
-	if (delegate != nil)
-	{
-		NSDateFormatter * formattingDate = [[NSDateFormatter alloc] init];
-		//To get the current date:
-		NSDate * currentDate = [NSDate date];
-		//Now to set the minimun date:
-		dateTime.minimumDate = currentDate;
-		if (formattingDate != nil)
-		{
-			//Change the format of the date and time:
-			[formattingDate setDateFormat:@"EEE, MMM d, yyyy h:mm a"];
-			NSLog(@"the %@", formattingDate);
-			stringDate = [formattingDate stringFromDate:dateShow];
-		}
-		if ([eventTextField.text isEqualToString:@""])
-		{
-			UIAlertView * noInputAlert = [[UIAlertView alloc] initWithTitle:@"No Event" message:@"Please enter an event:" delegate:self cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
-			[noInputAlert show];
-		}
-		else
-		{
-
-			//This is going to call back ViewController
-			[delegate showSavedInfoTxt:textField.text];
-			[self dismissViewControllerAnimated:YES completion:nil];
-		}
-		
-	}
-	//NSString * savedTxt = textField.text;
-	//NSLog(@"%@", savedTxt);
-	//
-
-	return true;
-}
-
-
 - (IBAction)closeKeyboardBtn:(id)sender
 {
-	if (closeButton.enabled == true)
+	if (_closeButton.enabled == true)
 	{
-		if ([eventTextField.text isEqualToString:@""])
+		if ([_eventTextField.text isEqualToString:@""])
 		{
-			eventTextField.text = @"Please enter event here!";
+			_eventTextField.text = @"Please enter event here!";
 			NSLog(@"Dont leave blank");
 		}
 		NSLog(@"in close");
-		NSString * saveTxt = eventTextField.text;
+		NSString * saveTxt = _eventTextField.text;
 		NSLog(@"%@", saveTxt);
-		[eventTextField resignFirstResponder];
+		[_eventTextField resignFirstResponder];
 	}
-	else if (closeButton.tag == 0)
+	else if (_closeButton.tag == 0)
 	{
 		//To hide the keyboard:
-		[eventTextField resignFirstResponder];
+		[_eventTextField resignFirstResponder];
 	}
 
 }

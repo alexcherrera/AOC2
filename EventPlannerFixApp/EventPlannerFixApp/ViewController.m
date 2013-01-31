@@ -15,9 +15,32 @@
 
 @implementation ViewController
 //Synthesize each to have for getter and setters:
-@synthesize datePlanner, savedViewEvents;
+@synthesize datePlanner = _datePlanner;
+@synthesize savedViewEvents = _savedViewEvents;
 @synthesize rightSwipeLabel = _rightSwipeLabel;
 @synthesize rightSwipe = _rightSwipe;
+
+//Getter method for the datePlanner:
+- (UILabel *)datePlanner
+{
+	return _datePlanner;
+}
+//Setter method for the datePlanner:
+- (void)setDatePlanner:(UILabel *)datePlanner
+{
+	_datePlanner = datePlanner;
+}
+
+//Getter method for the savedViewEvents:
+- (UITextView *)_savedViewEvents
+{
+	return _savedViewEvents;
+}
+//Setter method for the savedViewEvents:
+- (void)setSavedViewEvents:(UITextView *)savedViewEvents
+{
+	_savedViewEvents = savedViewEvents;
+}
 
 //Getter method for the rightSwipeLabel:
 - (UILabel *)rightSwipeLabel
@@ -46,7 +69,7 @@
 	if (appearSavedDefaults != nil)
 	{
 		NSString * savedString = [appearSavedDefaults objectForKey:@"Text View"];
-		savedViewEvents.text = savedString;
+		_savedViewEvents.text = savedString;
 		
 	}
     [super viewDidLoad];
@@ -96,7 +119,7 @@
 	NSUserDefaults * saveDefaults = [NSUserDefaults standardUserDefaults];
 	if (saveDefaults != nil)
 	{
-		NSString * stringTxtView = savedViewEvents.text;
+		NSString * stringTxtView = _savedViewEvents.text;
 		//Set to the default:
 		[saveDefaults setObject:stringTxtView forKey:@"Text View"];
 		//Saving the information:
@@ -109,16 +132,14 @@
 
 	NSString * appendString = [NSString stringWithFormat: @"\n %@", savedInfoTxt];
 
-	savedViewEvents.text = [savedViewEvents.text stringByAppendingString:appendString];
+	_savedViewEvents.text = [_savedViewEvents.text stringByAppendingString:appendString];
 }
 
 - (void)savedInfoDateTime:(NSString *)savedInfoDateTime
 {
 	NSString * appendString = [NSString stringWithFormat: @"\n %@", savedInfoDateTime];
 
-
-
-	savedViewEvents.text = [savedViewEvents.text stringByAppendingString:appendString];
+	_savedViewEvents.text = [_savedViewEvents.text stringByAppendingString:appendString];
 }
 
 @end
