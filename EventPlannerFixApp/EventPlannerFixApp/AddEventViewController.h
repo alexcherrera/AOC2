@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 //Going to be implemented in the ViewController:
 @protocol AddEvent <NSObject>
 
@@ -34,15 +35,16 @@
 }
 @property (strong) id<AddEvent> delegate;
 //Property's of each Outlet UI element:
-@property (weak, nonatomic) IBOutlet UIButton * saveButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *swipeLeftLabel;
 @property (weak, nonatomic) IBOutlet UIButton * closeButton;
 @property (weak, nonatomic) IBOutlet UILabel * eventLabel;
 @property (weak, nonatomic) IBOutlet UITextField * eventTextField;
 @property (weak, nonatomic) IBOutlet UILabel * dateTimeLabel;
 @property (weak, nonatomic) IBOutlet UIDatePicker * dateTime;
+@property (nonatomic) UISwipeGestureRecognizer * leftSwipe;
 
-//Action taking place when the add button is clicked:
-- (IBAction)saveEventInfoBtn:(id)sender;
+//Action taking place when clicked:
 - (IBAction)closeKeyboardBtn:(id)sender;
 - (IBAction)dateTimePickerChg:(id)sender;
 

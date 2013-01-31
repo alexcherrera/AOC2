@@ -42,6 +42,13 @@
 
 - (void)viewDidLoad
 {
+	NSUserDefaults * appearSavedDefaults = [NSUserDefaults standardUserDefaults];
+	if (appearSavedDefaults != nil)
+	{
+		NSString * savedString = [appearSavedDefaults objectForKey:@"Text View"];
+		savedViewEvents.text = savedString;
+		
+	}
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -53,20 +60,10 @@
 	//This is going to say which direction its going to be:
 	_rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
 	[_rightSwipeLabel addGestureRecognizer:_rightSwipe];//Attachs the gesture to this label.
-	
-	//Left Swiper:
-	
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-	NSUserDefaults * appearSavedDefaults = [NSUserDefaults standardUserDefaults];
-	if (appearSavedDefaults != nil)
-	{
-		NSString * savedString = [appearSavedDefaults objectForKey:@"Text View"];
-		savedViewEvents.text = savedString;
-		
-	}
 	[super viewDidAppear:animated];
 }
 
