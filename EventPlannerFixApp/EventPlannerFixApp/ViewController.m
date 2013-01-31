@@ -53,6 +53,21 @@
 	//This is going to say which direction its going to be:
 	_rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
 	[_rightSwipeLabel addGestureRecognizer:_rightSwipe];//Attachs the gesture to this label.
+	
+	//Left Swiper:
+	
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	NSUserDefaults * appearSavedDefaults = [NSUserDefaults standardUserDefaults];
+	if (appearSavedDefaults != nil)
+	{
+		NSString * savedString = [appearSavedDefaults objectForKey:@"Text View"];
+		savedViewEvents.text = savedString;
+		
+	}
+	[super viewDidAppear:animated];
 }
 
 - (void)swiped:(UISwipeGestureRecognizer *)swipeRecognizer
@@ -80,7 +95,16 @@
 
 - (IBAction)saveButton:(id)sender
 {
-
+	//To save the information in the textView:
+	NSUserDefaults * saveDefaults = [NSUserDefaults standardUserDefaults];
+	if (saveDefaults != nil)
+	{
+		NSString * stringTxtView = savedViewEvents.text;
+		//Set to the default:
+		[saveDefaults setObject:stringTxtView forKey:@"Text View"];
+		//Saving the information:
+		[saveDefaults synchronize];
+	}
 }
 
 - (void)showSavedInfoTxt:(NSString *)savedInfoTxt
