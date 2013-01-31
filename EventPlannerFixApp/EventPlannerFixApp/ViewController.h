@@ -14,7 +14,9 @@
 //Property's of each Outlet UI element:
 @property (weak, nonatomic) IBOutlet UILabel *datePlanner;
 @property (weak, nonatomic) IBOutlet UITextView *savedViewEvents;
-@property (weak, nonatomic) IBOutlet UIButton *addEventButton;
+@property (weak, nonatomic) IBOutlet UILabel *rightSwipeLabel;
+//Gesture recognizer:
+@property (nonatomic) UISwipeGestureRecognizer * rightSwipe;
 
 
 
